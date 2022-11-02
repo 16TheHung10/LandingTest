@@ -10,32 +10,37 @@ export default function IntroFeature() {
       <div className="group">
         <div className="item">
           <h1>{t("decentralized-messenger")}</h1>
-          <p>erro404 Fully private function and fast cryptocurrency transfer</p>
-          <a href="#">{"Read more >"}</a>
+          <p>{t("guaranteed-diverse-rewards-and-perfect-privacy-features")}</p>
+          <a href="#">{`${t("read-more")} >`} </a>
         </div>
         <div className="item">
           <h1>{t("nft-camera")}</h1>
-          <p>error404 Instantly generate NFTs for every photo you take</p>
-          <a href="#">{"Read more >"}</a>
+          <p>
+            {t(
+              "all-images-captured-by-the-pools-camera-are-instantly-converted-to-nfts"
+            )}
+          </p>
+          <a href="#">{`${t("read-more")} >`} </a>
+        </div>
+      </div>
+
+      <div className="group">
+        <div className="item">
+          <h1>{t("reward-music")}</h1>
+          <p>{t("listen-to-music-for-free-and-mine-tokens-every-day.")}</p>
+          <a href="#">{`${t("read-more")} >`} </a>
+        </div>
+        <div className="item">
+          <h1>{t("exclusive-shopping-mall")}</h1>
+          <p>{t("an-online-shopping-mall-dedicated-to-pools")} </p>
+          <a href="#">{`${t("read-more")} >`} </a>
         </div>
       </div>
       <div className="group">
         <div className="item">
-          <h1>{t("decentralized-messenger")}</h1>
-          <p>error404 Fully private function and fast cryptocurrency transfer</p>
-          <a href="#">{"Read more >"}</a>
-        </div>
-        <div className="item"> 
-          <h1>{t("nft-camera")}</h1>
-          <p>error404 Instantly generate NFTs for every photo you take</p>
-          <a href="#">{"Read more >"}</a>
-        </div>
-      </div>
-      <div className="group">
-        <div className="item"> 
           <h1>{t("nft-marketplace")}</h1>
-          <p> error404NFT Market has no expense burden day</p>
-          <a href="#">{"Read more >"}</a>
+          <p>{t("nft-market-has-no-expense-burden.")}</p>
+          <a href="#">{`${t("read-more")} >`} </a>
         </div>
       </div>
     </IntroFeatureWrapper>

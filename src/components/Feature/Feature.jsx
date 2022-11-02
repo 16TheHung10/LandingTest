@@ -1,14 +1,15 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { FeatureWrapper } from "./styled";
 
 export default function Feature() {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   return (
     <FeatureWrapper>
       <div className="content-top">
-        <h1 className="title">POOLS Phone Ultra X</h1>
+        <h1 className="title">{t("the-future-of-smartphone")}</h1>
         <div className="description">
           <h4>{t("best-performance,-modern")} </h4>
           <p>{t("feature-des")}</p>
@@ -18,9 +19,9 @@ export default function Feature() {
             A mind-blowing chip that doubles down on machine learning and pushes
             the boundaries of what a smartphone can do.
           </p> */}
-          <button onClick={() => navigate("/#pre-order")}>
+          {/* <button onClick={() => navigate("/#pre-order")}>
             {t("learn-more")}{" "}
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="layer"></div>

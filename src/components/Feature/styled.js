@@ -15,6 +15,8 @@ export const FeatureWrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
   .content-top {
+    width: 50%;
+
     z-index: 999;
     .title {
       background: linear-gradient(90.07deg, #fafafb 0.98%, #21d4ff 89.6%);
@@ -25,6 +27,7 @@ export const FeatureWrapper = styled.section`
       font-weight: 700;
       line-height: 14.4rem;
       text-align: left;
+      text-transform: uppercase;
     }
     .description {
       text-align: left;

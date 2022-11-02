@@ -31,9 +31,12 @@ export const PoolPartyWrapper = styled.section`
   .image-2 {
   }
   .content {
-    width: 70%;
+    width: 50%;
     text-align: center;
     margin: auto;
+    p {
+      margin-bottom: 1rem;
+    }
   }
   img {
     width: 100%;
