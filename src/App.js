@@ -25,7 +25,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/pool-app-store" element={<OtherPage />} />
             <Route path="/pool-wallet" element={<OtherPage2 />} />
-            <Route path="/pool-app-cards" element={<OtherPage3 />} />
+            <Route path="/pool-cards" element={<OtherPage3 />} />
           </Routes>
         </Router>
       </div>

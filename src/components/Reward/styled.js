@@ -26,7 +26,7 @@ export const RewardWrapper = styled.div`
     h1 {
       font-weight: 600;
       font-size: 6.4rem;
-      line-height: 130%;
+      line-height: 140%;
     }
   }
   .content-bottom {
@@ -76,6 +76,17 @@ export const RewardWrapper = styled.div`
           border-radius: 5px;
         }
       }
+    }
+  }
+  .footer_info {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 3.7rem;
     }
   }
   @media screen and (max-width: 1400px) {

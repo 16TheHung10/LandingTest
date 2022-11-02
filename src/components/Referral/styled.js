@@ -3,7 +3,7 @@ export const ReferralWrapper = styled.div`
   min-width: 330px;
   background-color: black;
   color: white;
-  padding: 24rem;
+  padding: 15rem;
   .header {
     h3 {
       font-weight: 600;
@@ -16,6 +16,7 @@ export const ReferralWrapper = styled.div`
       font-size: 6.4rem;
       line-height: 130%;
       text-align: center;
+      margin: 1rem 0;
     }
     p {
       font-weight: 400;
@@ -25,24 +26,21 @@ export const ReferralWrapper = styled.div`
       color: var(--textGray);
     }
   }
-  .cards {
-    margin-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2.5rem;
-    .img-group {
-      display: flex;
-    }
-    .img {
-      width: 50%;
-    }
+  .img {
+    width: 100%;
     img {
       width: 100%;
     }
-    .card_item {
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+    /* .card_item {
       flex-basis: 54rem;
-    }
+    } */
   }
   @media screen and (max-width: 1199px) {
     .cards {
@@ -50,18 +48,9 @@ export const ReferralWrapper = styled.div`
     }
   }
   @media screen and (max-width: 989px) {
-    .cards {
-      .img-group {
-        flex-direction: column;
-      }
-      .img {
-        width: 100%;
-      }
-    }
   }
   @media screen and (max-width: 767px) {
   }
   @media screen and (max-width: 575px) {
-    padding: 10rem;
   }
 `;
