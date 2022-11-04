@@ -1,10 +1,35 @@
-import React, { forwardRef } from "react";
+
+import React, { useRef, useState } from "react";
+
 import preOrder from "../../assets/images/pre-order.png";
 import { PreOrderWrapper } from "./styled";
 import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-order.svg";
 import { useTranslation } from "react-i18next";
-function PreOrder(props, ref) {
+
+import { toast } from "react-toastify";
+export default function PreOrder() {
   const { t, i18n } = useTranslation();
+  const [loading, setLoading] = useState(false);
+  const formRef = useRef();
+  const onsubmit = (e) => {
+    setLoading(true);
+    const url =
+      "https://script.google.com/macros/s/AKfycbwaiaSItVVdIf2E24tZ7z6N7hWACjiX4fwsuUqBCJBpbwm_VLCBUPZg9Ix8-kXCQsnP/exec";
+    e.preventDefault();
+    const data = new FormData(formRef.current);
+    fetch(url, {
+      method: "POST",
+      body: data,
+    })
+      .then(() => {
+        setLoading(false);
+        toast("Success!");
+      })
+      .catch(() => {
+        setLoading(false);
+        toast("Somethings went wrong!. Please try again");
+      });
+  };
   return (
     <PreOrderWrapper ref={ref} className="container">
       <div className="left" id="pre-order">
@@ -17,10 +42,32 @@ function PreOrder(props, ref) {
             )}
           </p>
         </div>
-        <form className="form">
-          <input type="text" placeholder={t("email-address")} />
-          <input type="text" placeholder={t("country")} />
-          <button>{t("pre-order-now")} </button>
+        <form
+          ref={formRef}
+          className="form"
+          onSubmit={onsubmit}
+          // method="POST"
+          // action="https://script.google.com/macros/s/AKfycbwaiaSItVVdIf2E24tZ7z6N7hWACjiX4fwsuUqBCJBpbwm_VLCBUPZg9Ix8-kXCQsnP/exec"
+        >
+          <input
+            name="Email"
+            type="email"
+            placeholder={t("email-address")}
+            required
+          />
+          <input
+            name="Country"
+            type="text"
+            placeholder={t("country")}
+            required
+          />
+          {loading ? (
+            <button disabled style={{ cursor: "not-allowed" }}>
+              Please waiting for your information is saved...
+            </button>
+          ) : (
+            <button>{t("pre-order-now")} </button>
+          )}
         </form>
         <div className="short_des">
           <WarningIcon width={50} />

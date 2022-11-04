@@ -8,6 +8,7 @@ import Comp from "./page/Comp/Comp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ToastContainer } from "react-toastify";
 
 export const AppContext = createContext();
 function App() {
@@ -20,6 +21,7 @@ function App() {
   return (
     <AppContext.Provider value={{ language, setLanguage }}>
       <div className="App">
+        <ToastContainer />
         <Router>
           <Routes>
             <Route path="/" element={<Landing />} />
