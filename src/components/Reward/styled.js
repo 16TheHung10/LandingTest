@@ -11,7 +11,7 @@ export const RewardWrapper = styled.div`
   background-position: center;
   height: 100rem;
   .content {
-    text-align: left;
+    text-align: right;
     width: 70rem;
     margin-left: auto;
 
@@ -84,11 +84,39 @@ export const RewardWrapper = styled.div`
     display: flex;
     align-items: end;
     justify-content: space-between;
-    span {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.8rem;
-      line-height: 3.7rem;
+    flex-direction: column;
+    text-align: right;
+    width: 59%;
+    align-items: right;
+    align-items: end;
+    margin-left: auto;
+    .prices {
+      h1 {
+        color: #21d4ff;
+      }
+      button {
+        padding: 0.5rem;
+        border: 1px solid white;
+        background: black;
+        color: white;
+        border-radius: 3px;
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        padding: 5px 2rem;
+      }
+    }
+    .warning {
+      display: flex;
+      align-items: center;
+      width: 60%;
+      span {
+        text-align: right;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+      svg {
+      }
     }
   }
   @media screen and (max-width: 1400px) {
@@ -128,5 +156,16 @@ export const RewardWrapper = styled.div`
   @media screen and (max-width: 767px) {
   }
   @media screen and (max-width: 575px) {
+    .content {
+      text-align: center;
+    }
+    .footer_info {
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      .warning {
+        width: 100%;
+      }
+    }
   }
 `;

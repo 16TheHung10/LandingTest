@@ -6,25 +6,15 @@ export const TrailerWrapper = styled.div`
     margin-left: auto;
     .content {
       margin-bottom: 5rem;
+      width: 60%;
+      margin-left: auto;
       h3 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 3rem;
-        line-height: 4.5rem;
         text-align: right;
       }
       h1 {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 6.4rem;
-        line-height: 130%;
         text-align: right;
       }
       p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
         text-align: right;
       }
     }
@@ -37,9 +27,17 @@ export const TrailerWrapper = styled.div`
   @media screen and (max-width: 1199px) {
   }
   @media screen and (max-width: 989px) {
+    .header {
+      .content {
+        width: 70%;
+      }
+    }
   }
   @media screen and (max-width: 767px) {
     .header {
+      .content {
+        width: 100%;
+      }
     }
   }
   @media screen and (max-width: 575px) {

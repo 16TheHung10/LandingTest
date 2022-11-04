@@ -9,8 +9,8 @@ export default function PoolParty() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   return (
-    <PoolPartyWrapper className="container">
-      <div className="content-one">
+    <PoolPartyWrapper>
+      <div className="content-one container">
         <div className="content">
           {/* <h3> error404 The latest trends with a wealth of information</h3> */}
           <h1>{t("pools-party")}</h1>
@@ -29,10 +29,11 @@ export default function PoolParty() {
           <img src={poolParty1} alt="phone" />
         </div>
       </div>
-      <div className="content-two">
+      <div className="content-two container">
         <div className="image image-2">
           <img src={poolParty2} alt="phone" />
           <div className="content">
+            <h3>{t("")}</h3>
             <h1>{t("ready-to-start-pools?")}</h1>
             <p>
               {t(
@@ -40,9 +41,9 @@ export default function PoolParty() {
               )}
             </p>
             {/* <button>Gets POOLS</button> */}
-            {/* <button onClick={() => navigate("/#pre-order")}>
+            <button onClick={() => navigate("/#pre-order")}>
               {t("get-pools.")}
-            </button> */}
+            </button>
           </div>
         </div>
       </div>

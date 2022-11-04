@@ -1,5 +1,4 @@
-
-import React, { useRef, useState } from "react";
+import React, { forwardRef, useRef, useState } from "react";
 
 import preOrder from "../../assets/images/pre-order.png";
 import { PreOrderWrapper } from "./styled";
@@ -7,7 +6,7 @@ import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-orde
 import { useTranslation } from "react-i18next";
 
 import { toast } from "react-toastify";
-export default function PreOrder() {
+function PreOrder() {
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const formRef = useRef();
@@ -31,7 +30,7 @@ export default function PreOrder() {
       });
   };
   return (
-    <PreOrderWrapper ref={ref} className="container">
+    <PreOrderWrapper className="container">
       <div className="left" id="pre-order">
         <div className="content">
           <h3>{t("pre-order-today-for-$100")}</h3>
@@ -66,16 +65,13 @@ export default function PreOrder() {
               Please waiting for your information is saved...
             </button>
           ) : (
-            <button>{t("pre-order-now")} </button>
+            <button>{t("Continue to deposit")} </button>
           )}
         </form>
         <div className="short_des">
           <WarningIcon width={50} />
           <span>{t("device-expected-to-ship-in-july-2023")}</span>
         </div>
-      </div>
-      <div className="right">
-        <h1>FAQ</h1>
       </div>
     </PreOrderWrapper>
   );

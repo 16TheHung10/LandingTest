@@ -8,11 +8,11 @@ import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-orde
 export default function Reward() {
   const navigate = useNavigate();
   return (
-    <RewardWrapper>
+    <RewardWrapper className="container">
       <div className="header container">
         <div className="content">
           <h3>{t("the-world's-first-reward-smartphone")}</h3>
-          <h1>Reward Smartphone</h1>
+          <h1>{t("reward-smartphone")}</h1>
           <p>
             {t(
               "the-value-of-pools-is-that-it-makes-users'-lives-more-enjoyable-by-allowing-them-to-earn-money-and-receive-daily-rewards-as-if-they-were-mining-gold."
@@ -20,17 +20,14 @@ export default function Reward() {
           </p>
           <div className="footer_info">
             <div className="prices">
-              <p>100$</p>
+              <h1>100$</h1>
               <button onClick={() => navigate("/#pre-order")}>
                 {t("pre-order-now")}
               </button>
             </div>
             <div className="warning">
+              <span>{t("device-expected-to-ship-in-july-2023")}</span>
               <WarningIcon width={50} />
-              <span>
-                Device expected to ship in July 2023. The final purchase price
-                will be $500.
-              </span>
             </div>
           </div>
         </div>
