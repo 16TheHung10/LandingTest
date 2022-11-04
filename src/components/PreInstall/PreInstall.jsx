@@ -14,17 +14,17 @@ function PreInstall(props, ref) {
         <div className="detail">
           <div className="detail_item">
             <h3>{t("pools-app-store")}</h3>
-            <p>Your digital assets will be richer</p>
+            <p>{t("users-can-easily-swap-or-trade")}</p>
             <NavLink to="/pool-app-store">{`${t("read-more")} >`}</NavLink>
           </div>
           <div className="detail_item">
-            <h3>POOLS Wallet</h3>
-            <p>Easily manage digital assets</p>
+            <h3>{t("pools-wallet")} </h3>
+            <p>{t("easily-manage-digital-assets")} </p>
             <NavLink to="/pool-wallet">{`${t("read-more")} >`}</NavLink>
           </div>
           <div className="detail_item">
-            <h3>POOLS Card</h3>
-            <p>Pools exclusive biometric</p>
+            <h3>{t("pools-card")} </h3>
+            <p>{t("pools-exclusive-biometric")} </p>
             <NavLink to="/pool-cards">{`${t("read-more")} >`}</NavLink>
           </div>
         </div>

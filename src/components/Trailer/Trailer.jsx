@@ -10,7 +10,7 @@ export default function Trailer() {
     <TrailerWrapper className="container">
       <div className="header">
         <div className="content">
-          <h3>{t("trailer")}</h3>
+          <h3>{t("video")}</h3>
           <h1>Ultra X Smartphone</h1>
           <p>
             {t(

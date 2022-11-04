@@ -7,7 +7,10 @@ import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-orde
 import { useTranslation } from "react-i18next";
 
 import { toast } from "react-toastify";
- function PreOrder() {
+
+
+
+function PreOrder() {
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
   const formRef = useRef();
@@ -32,6 +35,8 @@ import { toast } from "react-toastify";
   };
   return (
     <PreOrderWrapper  className="container">
+
+
       <div className="left" id="pre-order">
         <div className="content">
           <h3>{t("pre-order-today-for-$100")}</h3>
@@ -66,16 +71,13 @@ import { toast } from "react-toastify";
               Please waiting for your information is saved...
             </button>
           ) : (
-            <button>{t("pre-order-now")} </button>
+            <button>{t("Continue to deposit")} </button>
           )}
         </form>
         <div className="short_des">
           <WarningIcon width={50} />
           <span>{t("device-expected-to-ship-in-july-2023")}</span>
         </div>
-      </div>
-      <div className="right">
-        <h1>FAQ</h1>
       </div>
     </PreOrderWrapper>
   );

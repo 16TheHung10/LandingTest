@@ -10,7 +10,7 @@ export const FeatureWrapper = styled.section`
   background-image: url(${layerImage}), url(${layerImage2});
   background-color: black;
   background-repeat: no-repeat;
-  background-position: 100% 17rem;
+  background-position: 100% 25rem;
   padding-top: 184px;
   margin-top: 0px;
   z-index: 99;
@@ -22,7 +22,7 @@ export const FeatureWrapper = styled.section`
   .content-top {
     width: 100%;
     z-index: 999;
-
+    margin-top: 19rem;
     h4 {
       font-weight: 700;
       font-size: 40px;
@@ -37,7 +37,7 @@ export const FeatureWrapper = styled.section`
       text-fill-color: transparent;
       font-size: 9.6rem;
       font-weight: 700;
-      line-height: 7.4rem;
+      line-height: 12.4rem;
       text-align: left;
       text-transform: uppercase;
       position: relative;
@@ -129,6 +129,7 @@ export const FeatureWrapper = styled.section`
     padding-left: 5rem;
     padding-right: 5rem;
     .content-top {
+      margin-top: 0;
       .title {
         font-size: 7.6rem;
         line-height: 10.4rem;

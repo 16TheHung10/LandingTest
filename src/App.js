@@ -9,6 +9,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ToastContainer } from "react-toastify";
+import ShoppingMall from "./components/ImgaeLeftContentRight/One/ShoppingMall";
+import ContactUs from "./components/ContactUs/ContactUs";
+import MarketPlace from "./components/ImgaeLeftContentRight/Two/MarketPlace";
+import Decentralized from "./components/Decentralized/Decentralized";
 
 export const AppContext = createContext();
 function App() {
@@ -21,13 +25,18 @@ function App() {
   return (
     <AppContext.Provider value={{ language, setLanguage }}>
       <div className="App">
-        <ToastContainer />
+        {/* <ToastContainer /> */}
         <Router>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/pool-app-store" element={<OtherPage />} />
             <Route path="/pool-wallet" element={<OtherPage2 />} />
             <Route path="/pool-cards" element={<OtherPage3 />} />
+            <Route path="/shopping-mall" element={<ShoppingMall />} />
+            <Route path="/shopping-mall" element={<ShoppingMall />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/market-place" element={<MarketPlace />} />
+            <Route path="/decentralized" element={<Decentralized />} />
           </Routes>
         </Router>
       </div>

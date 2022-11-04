@@ -2,10 +2,43 @@ import React, { useContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
+import { AiOutlineMenu } from "react-icons/ai";
 import logo from "../../assets/images/logo.png";
 import { HeaderTwoWrapper } from "./styled";
+const NavData = [
+  {
+    name: "POOLS Phone",
+    link: "pools-phone",
+  },
+  {
+    name: "Pre-installed",
+    link: "pre-installed",
+  },
+  {
+    name: "Support",
+    link: "support",
+  },
+  // {
+  //   name: "Pre-order",
+  //   link: "pre-order",
+  // },
+  // {
+  //   name: "News",
+  //   link: "news",
+  // },
+  // {
+  //   name: "Download",
+  //   link: "download",
+  // },
+  // {
+  //   name: "Support",
+  //   link: "support",
+  // },
+];
+
 export default function HeaderTwo({ preOrderRef, prInstallRef }) {
   const [selectedSection, setSelectedSection] = useState("pre-order");
+  const [isShowMenu, setIsShowMenu] = useState(false);
   const appContext = useContext(AppContext);
   const { setLanguage } = appContext;
   const params = useLocation();
@@ -33,7 +66,27 @@ export default function HeaderTwo({ preOrderRef, prInstallRef }) {
         </div>
         <nav>
           <ul className="nav_text">
-            <li
+            {NavData.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className={`nav_item ${
+                    selectedSection === item.link ? "active" : ""
+                  }`}
+                >
+                  <button
+                    className="nav_btn"
+                    onClick={() => {
+                      setSelectedSection(item.link);
+                      navigate(`/#${item.link}`);
+                    }}
+                  >
+                    {t(item.link)}
+                  </button>
+                </li>
+              );
+            })}
+            {/* <li
               className={`nav_item ${
                 selectedSection === "pre-order" ? "active" : ""
               }`}
@@ -62,9 +115,62 @@ export default function HeaderTwo({ preOrderRef, prInstallRef }) {
               >
                 {t("pre-installed")}
               </button>
-            </li>
+            </li> */}
+            {/* <li className={`nav_item `}>
+              <button
+                className="nav_btn"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("pre-installed")}
+              </button>
+            </li> */}
           </ul>
-          <div className="nav_icon">icon</div>
+          <div className="nav_icon">
+            <div
+              className={`mobile_menu ${
+                isShowMenu ? "show_menu" : "hide_menu"
+              }`}
+            >
+              {NavData.map((item, index) => {
+                return (
+                  <button
+                    className="nav_btn"
+                    onClick={() => {
+                      setSelectedSection(item.link);
+                      navigate(`"/#${item.link}"`);
+                    }}
+                  >
+                    {t(item.link)}
+                  </button>
+                );
+              })}
+              {/* <button
+                className="nav_btn"
+                onClick={() => {
+                  setSelectedSection("pre-installed");
+                  navigate("/#pre-installed");
+                }}
+              >
+                {t("pre-installed")}
+              </button>
+              <button
+                className="nav_btn"
+                onClick={() => {
+                  setSelectedSection("pre-installed");
+                  navigate("/#pre-installed");
+                }}
+              >
+                {t("pre-installed")}
+              </button> */}
+            </div>
+
+            <AiOutlineMenu
+              onClick={() => setIsShowMenu((prev) => !prev)}
+              style={{ fontSize: "5rem" }}
+            />
+          </div>
         </nav>
         <nav className="nav-config">
           <div className="languages">
