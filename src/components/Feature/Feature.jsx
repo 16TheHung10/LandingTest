@@ -9,11 +9,13 @@ export default function Feature() {
   return (
     <FeatureWrapper className="container">
       <div className="content-top">
-        <h4>THE FUTURE OF</h4>
+        <h4 style={{ textTransform: "uppercase" }}>{t("the-future-of")}</h4>
         <div className="title">
-          {"smartphone".split("").map((item, index) => {
-            return <span>{item}</span>;
-          })}
+          {t("smartphone")
+            .split("")
+            .map((item, index) => {
+              return <span>{item}</span>;
+            })}
         </div>
         {/* <h1 className="title">{t("smartphone")}</h1> */}
         <div className="description">

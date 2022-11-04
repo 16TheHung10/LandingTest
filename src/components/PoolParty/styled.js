@@ -52,7 +52,7 @@ export const PoolPartyWrapper = styled.section`
 
     align-items: center;
     .content {
-      margin-top: 17%;
+      margin-top: 15%;
       margin-left: -25rem;
       width: 77.5rem;
       text-align: center;

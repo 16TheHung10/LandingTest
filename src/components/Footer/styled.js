@@ -9,6 +9,7 @@ export const FooterWrapper = styled.section`
   justify-content: space-between;
   padding: 6rem 16rem;
   gap: 7rem;
+  align-items: center;
   .left {
     display: flex;
     flex-direction: column;
@@ -24,8 +25,11 @@ export const FooterWrapper = styled.section`
   }
   .right {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: left;
+    width: 50%;
+    justify-content: space-evenly;
+    text-align: revert;
     a {
       font-size: 2rem;
       color: white;
