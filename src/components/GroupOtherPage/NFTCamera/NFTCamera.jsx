@@ -1,9 +1,12 @@
+
+import { useTranslation } from "react-i18next";
 import React from "react";
 import HomeLayout from "../../../layouts/HomeLayout";
 import { HeroCamera } from "./styled";
-
 function NFTCamera() {
+  const { t, i18n } = useTranslation();
   return (
+
     <HomeLayout>
       <HeroCamera classname="container">
         <div className="wrap_camera">
