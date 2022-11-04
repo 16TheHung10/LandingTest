@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import HomeLayout from "../../layouts/HomeLayout";
 import { DecentralizedWrapper } from "./styled";
@@ -7,35 +8,35 @@ export default function Decentralized() {
     <HomeLayout>
       <DecentralizedWrapper className="container">
         <div className="title">
-          <h1>Decentralized Messenger</h1>
-          <p>Guaranteed diverse rewards and perfect privacy features</p>
+          <h1>{t("decentralized-messenger")}</h1>
+          <p>{t("guaranteed-diverse-rewards-and-perfect-privacy-features")}</p>
         </div>
         <div className="content">
           <div className="row">
             <div className="card">
-              <p>Decentalize and Blockchain-powered</p>
+              <p>{t("Decentralized_and_Blockchain-powered")}</p>
             </div>
             <div className="card">
-              <p>Anonymous</p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="card">
-              <p>Strong reward</p>
-            </div>
-            <div className="card">
-              <p>Perfect security solutions</p>
-            </div>
-            <div className="card">
-              <p>Easy-to-use Crypto Wallet features </p>
+              <p>{t("Anonymous")}</p>
             </div>
           </div>
           <div className="row">
             <div className="card">
-              <p>Transfer crypto via Message</p>
+              <p>{t("Strong_rewards")}</p>
             </div>
             <div className="card">
-              <p>Available everywhere</p>
+              <p>{t("perfect-security-solution")}</p>
+            </div>
+            <div className="card">
+              <p>{t("easy-to-use-crypto-wallet-features")}</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="card">
+              <p>{t("transfer-crypto-via-message")}</p>
+            </div>
+            <div className="card">
+              <p>{t("available-everywhere")}</p>
             </div>
           </div>
         </div>

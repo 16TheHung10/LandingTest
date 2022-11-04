@@ -7,6 +7,12 @@
   "feature-des-2": "An unprecedented leap in battery life",
   "feature-des-3": "A mind-blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do ",
   "learn-more": "Learn more",
+
+  "transfer-crypto-via-message": "Transfer crypto via Message",
+  "perfect-security-solution": "Perfect security solutions",
+  "available-everywhere": "Available everywhere",
+  "easy-to-use-crypto-wallet-features": "Easy-to-use Crypto Wallet features",
+
   "the-world's-first-reward-smartphone": "The World's First Reward Smartphone",
   "reward-smartphone": "Reward Smartphone",
   "the-value-of-pools-is-that-it-makes-users'-lives-more-enjoyable-by-allowing-them-to-earn-money-and-receive-daily-rewards-as-if-they-were-mining-gold.": "The value of POOLS is that it makes users' lives more enjoyable by allowing them to earn money and receive daily rewards as if they were mining gold.\n",
@@ -26,9 +32,16 @@
   "dynamic-amoled-2x,-120hz,-hdr10+,-1750-nits-(peak)-\n\nsize-6.8-inches,-114.7-cm2-(~90.2%-screen-to-body-ratio)-1440-x-3088-pixels-(~500-ppi-density)-\n\ncorning-gorilla-glass-victus+-always-on-display\n": "Dynamic AMOLED 2X, 120Hz, HDR10+, 1750 nits (peak) \n\nSize 6.8 inches, 114.7 cm2 (~90.2% screen-to-body ratio) 1440 x 3088 pixels (~500 ppi density) \n\nCorning Gorilla Glass Victus+ Always-on display\n",
   "198-mp,-f/1.8,-23mm-(wide),-1/1.33\",-0.8µm,-pdaf\n": "198 MP, f/1.8, 23mm (wide), 1/1.33\", 0.8µm, PDAF\n",
   "the-future-of": "The future of ",
+  "listen-to-music-for": ":Listen to music for free and mine tokens every day.",
   "smartphone": "smartphone",
   "trailer": "Trailer",
   "pools-phone": "Pools-phone",
+  "Name": "Name",
+  "earn-tokens-by-listening-to-free-music": "Earn tokens by listening to free music from all genres all over the world via radio streaming. Furthermore, users can earn even larger rewards by winning the Daily Airdrop Big Event, which occurs every day.",
+  "Phone-Number": "Phone Number",
+  "Emaill-Address": "Emaill Address",
+  "Message": "Message",
+  "Submit": "Submit",
   "a-unique-smartphone-that-leads-the-mid-to-low-end-smartphone-market-with-innovative-design-and-reward-functions-and-services": "A unique smartphone that leads the mid-to-low-end smartphone market with innovative design and reward functions and services\n\n",
   "‘\"it-doesn't-get-any-better-than-that.”": "It doesn't get any better than that.",
   "the-sequence-of-reward-days-will-begin-when-you-turn-the-pools-phone-on.": "The sequence of reward days will begin when you turn the POOLS Phone on.\n",
@@ -80,7 +93,7 @@
   "decentralized-exchange": "Decentralized Exchange",
   "users-can-easily-swap-or-trade-rewarded-tokens-at-any-time-on-the-decentralized-exchange-'pools’.-furthermore,-digital-assets-can-be-easily-used-by-staking-and-participating-in-the-dao.": "Users can easily swap or trade rewarded tokens at any time on the decentralized exchange 'POOLS’. Furthermore, digital assets can be easily used by staking and participating in the DAO.",
   "decentralized-messenger": "Decentralized Messenger",
-  "guaranteed-diverse-rewards-and-perfect-privacy-features": "Guaranteed diverse rewards and perfect privacy features. Strong rewards\nAnonymous\nDecentralized and Blockchain-powered\nEasy-to-use Crypto Wallet feature\nTransfer cryptos via message\nAvailable everywhere\nPerfect security solutions",
+  "guaranteed-diverse-rewards-and-perfect-privacy-features": "Guaranteed diverse rewards and perfect privacy features. ",
   "strong-rewards\nanonymous\ndecentralized-and-blockchain-powered\neasy-to-use-crypto-wallet-feature\ntransfer-cryptos-via-message\navailable-everywhere\nperfect-security-solutions": "Strong rewards\nAnonymous\nDecentralized and Blockchain-powered\nEasy-to-use Crypto Wallet feature\nTransfer cryptos via message\nAvailable everywhere\nPerfect security solutions",
   "nft-camera": "NFT Camera",
   "all-images-captured-by-the-pools-camera-are-instantly-converted-to-nfts": "All images captured by the POOLS Camera are instantly converted to NFTs.",
@@ -92,8 +105,10 @@
   "listen-to-music-for-free-and-mine-tokens-every-day.": "Listen to music for free and mine tokens every day.",
   "earn-tokens-by-listening-to-free-music-from-all-genres-all-over-the-world-via-radio-streaming.-furthermore,-users-can-earn-even-larger-rewards-by-winning-the-daily-airdrop-big-event,-which-occurs-every-day.": "Earn tokens by listening to free music from all genres all over the world via radio streaming. Furthermore, users can earn even larger rewards by winning the Daily Airdrop Big Event, which occurs every day.",
   "exclusive-shopping-mall": "Exclusive Shopping mall",
-  "an-online-shopping-mall-dedicated-to-pools": "An online shopping mall dedicated to POOLS. ",
-  "an-online-shopping-mall-dedicated-to-pools.-\nthe-more-you-use-it,-the-more-payment-points-you-accumulate.\n": "An online shopping mall dedicated to POOLS. \nThe more you use it, the more payment points you accumulate.\n",
+  "shopping-h3-2": "An online shopping mall dedicated to Pools. The more you use it, the more payment points you accumulate.",
+  "shopping-h3-3": "ㆍDiscount benefits at the time of payment with the acquired reward tokens. ",
+  "shopping-h3-4": "ㆍSwap the points acquired at the time of payment into coins or use them for payment.",
+
   "?discount-benefits-at-the-time-of-payment-with-the-acquired-reward-tokens.\n?swap-the-points-acquired-at-the-time-of-payment-into-coins-or-use-them-for-payment.": "?Discount benefits at the time of payment with the acquired reward tokens.\n?Swap the points acquired at the time of payment into coins or use them for payment.",
   "pools-party": "POOLS PARTY",
   "it-is-a-pools-specific-social-media-app-that-allows-you-to-share-your-ideas-and-experiences-about-your-favorite-content,-such-as-reward-information-and-event-culture,-technology,-and-sports,-with-friends-all-over-the-world-via-videos-or-photos.": "It is a POOLS-specific social media app that allows you to share your ideas and experiences about your favorite content, such as reward information and event culture, technology, and sports, with friends all over the world via videos or photos.",
@@ -114,6 +129,7 @@
   "device-expected-to-ship-in-july-2023": "Device expected to ship in July 2023",
   "\nthe-final-purchase-price-will-be-$500": "\nThe final purchase price will be $500",
   "enter-your-information,-connect-your-wallet,-and-make-a-$100-usdc-refundable-deposit-to-reserve-your-spot-on-the-waitlist.-when-your-payment-is-received,-you-will-be-added-to-the-waitlist-and-notified-when-it-is-time-to-complete-your-order.\n\nto-be-added-to-the-pools-waitlist,-a-$100-usdc-deposit-is-required.-the-depsit-will-be-deducted-from-the-final-purchase-price-of-the-pools-phone.": "Enter your information, connect your wallet, and make a $100 USDC refundable deposit to reserve your spot on the waitlist. When your payment is received, you will be added to the waitlist and notified when it is time to complete your order.\n\nTo be added to the POOLS waitlist, a $100 USDC deposit is required. The depsit will be deducted from the final purchase price of the POOLS Phone.",
+
   "how_to_be_placed_on_the_pools_phone_waitlist" : "How to be placed on the Pools Phone Waitlist?",
   "which_countries_can_pools_phone_be_distributed" : "Which countries can Pools Phone be distributed",
   "do_i_need_to_deposit_after_drawing_and_buying_nft_on_pools_phone_nft_roulette" : "Do I need to deposit after drawing and buying NFT on Pools Phone NFT Roulette?",
@@ -121,4 +137,8 @@
   "when_pools_phones_released":"When Pools Phones released?",
   "will_pools_phone_have_the_google_play_store_installed" : "Will Pools Phone have the Google Play Store installed",
   "users_can_easily_swap_trade_rewarded_tokens_time_decentralized_exchange_pools_furthermore_digital_assets_can_easily_used_staking_participating_dao" : "Users can easily swap or trade rewarded tokens at any time on the decentralized exchange 'Pools’. Furthermore, digital assets can be easily used by staking and participating in the DAO."
+
+  "Strong_rewards": "Strong rewards",
+  "Anonymous": "Anonymous",
+  "Decentralized_and_Blockchain-powered": "Decentralized and Blockchain-powered"
 }

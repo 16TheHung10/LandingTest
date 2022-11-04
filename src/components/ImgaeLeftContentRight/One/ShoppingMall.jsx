@@ -3,6 +3,7 @@ import HomeLayout from "../../../layouts/HomeLayout";
 import Image from "../../../assets/images/shopping-mall.png";
 import BG from "../../../assets/images/shopping-mall.png";
 import { ShoppingMallWrapper } from "./styled";
+import { t } from "i18next";
 
 export default function ShoppingMall() {
   return (
@@ -14,16 +15,12 @@ export default function ShoppingMall() {
           </div>
           <div className="content-text">
             <div className="h1">
-              <h1>Exclusive </h1>
-              <h1>Shopping mall</h1>
+              <h1> {t("exclusive-shopping-mall")} </h1>
             </div>
-            <p>
-              An online shopping mall dedicated to Pools. The more you use it,
-              the more payment points you accumulate. ㆍDiscount benefits at the
-              time of payment with the acquired reward tokens. ㆍSwap the points
-              acquired at the time of payment into coins or use them for
-              payment.
-            </p>
+
+            <p>{t("shopping-h3-2")}</p>
+            <p>{t("shopping-h3-3")}</p>
+            <p>{t("shopping-h3-4")}</p>
           </div>
         </div>
         <div className="footer-bg"></div>

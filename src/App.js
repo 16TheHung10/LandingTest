@@ -13,6 +13,9 @@ import ShoppingMall from "./components/ImgaeLeftContentRight/One/ShoppingMall";
 import ContactUs from "./components/ContactUs/ContactUs";
 import MarketPlace from "./components/ImgaeLeftContentRight/Two/MarketPlace";
 import Decentralized from "./components/Decentralized/Decentralized";
+import PreOderFAQ from "./components/PreOderFAQ/PreOderFAQ";
+import RewardMusic from "./components/GroupOtherPage/RewardMusic/RewardMusic";
+import NFTCamera from "./components/GroupOtherPage/NFTCamera/NFTCamera";
 
 export const AppContext = createContext();
 function App() {
@@ -33,10 +36,14 @@ function App() {
             <Route path="/pool-wallet" element={<OtherPage2 />} />
             <Route path="/pool-cards" element={<OtherPage3 />} />
             <Route path="/shopping-mall" element={<ShoppingMall />} />
-            <Route path="/shopping-mall" element={<ShoppingMall />} />
+            {/* <Route path="/shopping-mall" element={<ShoppingMall />} /> */}
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/market-place" element={<MarketPlace />} />
             <Route path="/decentralized" element={<Decentralized />} />
+            RewardMusic
+            <Route path="/faq" element={<PreOderFAQ />} />
+            <Route path="/reward-music" element={<RewardMusic />} />
+            <Route path="/nft-camera" element={<NFTCamera />} />
           </Routes>
         </Router>
       </div>
