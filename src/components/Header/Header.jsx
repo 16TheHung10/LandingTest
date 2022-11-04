@@ -8,17 +8,17 @@ import { HeaderWrapper } from "./styled";
 
 const NavData = [
   {
-    name: "POOLS Phone",
-    link: "pools-phone",
+    name: "Pre-order",
+    link: "pre-order",
   },
   {
     name: "Pre-installed",
     link: "pre-installed",
   },
-  {
-    name: "Support",
-    link: "support",
-  },
+  // {
+  //   name: "Support",
+  //   link: "support",
+  // },
   // {
   //   name: "Pre-order",
   //   link: "pre-order",
@@ -39,7 +39,9 @@ const NavData = [
 
 export default function Header() {
   const appContext = useContext(AppContext);
-  const [selectedSection, setSelectedSection] = useState("pre-order");
+  const [selectedSection, setSelectedSection] = useState(
+    localStorage.getItem("selectedSection")
+  );
   const [isShowMenu, setIsShowMenu] = useState(false);
   const { setLanguage } = appContext;
   const params = useLocation();

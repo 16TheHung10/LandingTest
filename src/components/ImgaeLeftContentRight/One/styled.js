@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ShoppingMallWrapper = styled.div`
   min-width: 330px;
+  background-color: black;
   .content {
     display: flex;
     justify-content: space-between;

@@ -1,16 +1,17 @@
 import styled from "styled-components";
 import Slash from "../../assets/images/slash.png";
 
-export const HeaderWrapper = styled.div`
+export const HeaderThreeWrapper = styled.div`
   z-index: 999;
   width: 100%;
   min-width: 330px;
   display: flex;
   justify-content: center;
   background-color: black;
-  padding: 7.6rem 0 6.4rem;
-  position: fixed;
-  width: 100%;
+  padding: 2rem 0;
+  background: black;
+  /* position: fixed;
+  width: 100%; */
   header {
     width: 100%;
     padding: 0 24rem;
@@ -109,7 +110,6 @@ export const HeaderWrapper = styled.div`
   .hide_menu {
     transform: translateY(-200%);
   }
-
   @media screen and (max-width: 1199px) {
     header {
       padding: 0 2rem;
