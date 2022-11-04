@@ -12,6 +12,7 @@ import Referral from "../components/Referral/Referral";
 import Reward from "../components/Reward/Reward";
 import SecuritySolutions from "../components/SecuritySolutions/SecuritySolutions";
 import Trailer from "../components/Trailer/Trailer";
+import PreOderFAQ from "../components/PreOderFAQ/PreOderFAQ";
 import { Container } from "./styled";
 
 export default function Landing() {
@@ -28,6 +29,7 @@ export default function Landing() {
       <IntroFeature />
       <PoolParty />
       <PreOrder />
+      <PreOderFAQ />
       <Footer />
     </Container>
   );
