@@ -65,7 +65,7 @@
   "pools-exclusive-biometric-\nauthenticated-payment-card": "Thẻ thanh toán dựa trên xác thực sinh trắc học độc quyền của POOLS",
   "key-creation": "KEY CREATION",
   "ㆍ-non-face-to-face-identity-authentication-\nㆍ-authentication-via-id-generation-(connection)-\nㆍ-register-your-fingerprint-on-the-issued-card-\nㆍ-utilize-the-payment-service": "\n① Xác thực danh tính gián tiếp \n② Xác minh thông qua khởi tạo ID (liên kết ID)\n③ Có chức năng thanh toán",
-  "decentralized-exchange": "Decentralized Exchange",
+  "decentralized-exchange": "Sàn giao dịch phi tập trung",
   "users-can-easily-swap-or-trade-rewarded-tokens-at-any-time-on-the-decentralized-exchange-'pools’.-furthermore,-digital-assets-can-be-easily-used-by-staking-and-participating-in-the-dao.": "Người dùng có thể dễ dàng hoán đổi hoặc giao dịch token được thưởng trên sàn giao dịch phi tập trung 'POOLS' bất kỳ lúc nào. Ngoài ra, các tài sản kỹ thuật số cũng có thể dễ dàng được sử dụng thông qua việc staking và tham gia DAO.",
   "decentralized-messenger": "Decentralized Messenger",
   "guaranteed-diverse-rewards-and-perfect-privacy-features": "Đảm bảo phần thưởng phong phú và các tính năng riêng tư một cách hoàn hảo. \n\nPhần thưởng phong phú\nTính năng ẩn danh\nDựa trên sàn giao dịch phi tập trung và blockchain.\nTính năng crypto wallet dễ dàng để sử dụng\nGửi tiền điện tử qua tin nhắn\nCó thể sử dụng ở bất kỳ đâu trên thế giới.\nGiải pháp bảo mật tuyệt đối",
@@ -93,5 +93,12 @@
   "join-the-waitlist": "Đặt cọc",
   "pre-order-today-for-$100": "Đặt trước ngay hôm nay với giá chỉ $100",
   "device-expected-to-ship-in-july-2023\nthe-final-purchase-price-will-be-$500": "Sản phẩm dự kiến được giao vào 7/2023\nGiá thị trường sẽ rơi vào khoảng $500.",
-  "enter-your-information,-connect-your-wallet,-and-make-a-$100-usdc-refundable-deposit-to-reserve-your-spot-on-the-waitlist.-when-your-payment-is-received,-you-will-be-added-to-the-waitlist-and-notified-when-it-is-time-to-complete-your-order.\n\nto-be-added-to-the-pools-waitlist,-a-$100-usdc-deposit-is-required.-the-depsit-will-be-deducted-from-the-final-purchase-price-of-the-pools-phone.": "Nhập thông tin của bạn, kết nối ví của bạn và thực hiện một khoản tiền gửi có thể hoàn lại $ 100 USDC để giữ chỗ trong danh sách chờ. Khi nhận được thanh toán, bạn sẽ được thêm vào danh sách chờ và được thông báo khi đến lúc hoàn thành đơn đặt hàng của mình.\n\nĐể được thêm vào danh sách chờ POOLS, bạn phải đặt cọc $ 100 USDC. Khoản nợ sẽ được trừ vào giá mua cuối cùng của POOLS Phone."
+  "enter-your-information,-connect-your-wallet,-and-make-a-$100-usdc-refundable-deposit-to-reserve-your-spot-on-the-waitlist.-when-your-payment-is-received,-you-will-be-added-to-the-waitlist-and-notified-when-it-is-time-to-complete-your-order.\n\nto-be-added-to-the-pools-waitlist,-a-$100-usdc-deposit-is-required.-the-depsit-will-be-deducted-from-the-final-purchase-price-of-the-pools-phone.": "Nhập thông tin của bạn, kết nối ví của bạn và thực hiện một khoản tiền gửi có thể hoàn lại $ 100 USDC để giữ chỗ trong danh sách chờ. Khi nhận được thanh toán, bạn sẽ được thêm vào danh sách chờ và được thông báo khi đến lúc hoàn thành đơn đặt hàng của mình.\n\nĐể được thêm vào danh sách chờ POOLS, bạn phải đặt cọc $ 100 USDC. Khoản nợ sẽ được trừ vào giá mua cuối cùng của POOLS Phone.",
+  "how_to_be_placed_on_the_pools_phone_waitlist" : "Làm thế nào để được đưa vào danh sách chờ điện thoại của Pools",
+  "which_countries_can_pools_phone_be_distributed" : "Những quốc gia nào phân phối điện thoại Pools?",
+  "do_i_need_to_deposit_after_drawing_and_buying_nft_on_pools_phone_nft_roulette" : "Tôi có cần gửi tiền sau khi vẽ và mua NFT trên Pools Phone NFT Roulette không?",
+  "how_much_money_need_customers_deposit_to_get_on_the_waitlist" : "Người mua phải gửi bao nhiêu tiền để được vào danh sách chờ?",
+  "when_pools_phones_released" : "Điện thoại Pools sẽ ra mắt khi nào?",
+  "will_pools_phone_have_the_google_play_store_installed" : "Người mua phải gửi bao nhiêu tiền để được vào danh sách chờ",
+  "users_can_easily_swap_trade_rewarded_tokens_time_decentralized_exchange_pools_furthermore_digital_assets_can_easily_used_staking_participating_dao" : "Người dùng có thể dễ dàng hoán đổi hoặc giao dịch mã thông báo thưởng bất kỳ lúc nào trên trao đổi phi tập trung 'Hồ bơi'. Hơn nữa, tài sản kỹ thuật số có thể dễ dàng sử dụng bằng cách đặt cược và tham gia DAO."
 }
