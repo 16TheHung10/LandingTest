@@ -23,6 +23,25 @@ export const HeaderTwoWrapper = styled.div`
       .nav_icon {
         color: white;
         display: none;
+        position: relative;
+        .mobile_menu {
+          display: flex;
+          flex-direction: column;
+          background: black;
+          padding: 2rem;
+          position: absolute;
+          right: 0;
+          top: 102%;
+          z-index: 999;
+          width: 40rem;
+          button {
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 2rem;
+            color: white;
+          }
+          transition: all 0.5s cubic-bezier(0.2, 0.46, 0.81, 1.41);
+        }
       }
       ul {
         display: flex;
@@ -84,6 +103,12 @@ export const HeaderTwoWrapper = styled.div`
         cursor: pointer;
       }
     }
+  }
+  .show_menu {
+    transform: scale(1);
+  }
+  .hide_menu {
+    transform: translateY(-200%);
   }
   @media screen and (max-width: 1199px) {
     header {

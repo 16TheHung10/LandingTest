@@ -11,10 +11,10 @@ export const PreOrderWrapper = styled.section`
   color: white;
   background-image: url(${preOrder});
   background-repeat: no-repeat;
-  /* background-position: right;
-  background-size: contain; */
-  background-position: 0% 100%;
-  background-size: initial;
+  background-position: right;
+  background-size: contain;
+  /* background-position: 0% 100%;
+  background-size: initial; */
   padding-top: 25rem;
   .left {
     width: 40%;
