@@ -1,3 +1,4 @@
+
 import React, { forwardRef, useRef, useState } from "react";
 
 import preOrder from "../../assets/images/pre-order.png";
@@ -6,6 +7,9 @@ import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-orde
 import { useTranslation } from "react-i18next";
 
 import { toast } from "react-toastify";
+
+
+
 function PreOrder() {
   const { t, i18n } = useTranslation();
   const [loading, setLoading] = useState(false);
@@ -30,7 +34,9 @@ function PreOrder() {
       });
   };
   return (
-    <PreOrderWrapper className="container">
+    <PreOrderWrapper  className="container">
+
+
       <div className="left" id="pre-order">
         <div className="content">
           <h3>{t("pre-order-today-for-$100")}</h3>
