@@ -8,6 +8,7 @@ import Comp from "./page/Comp/Comp";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { createContext, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { ToastContainer } from "react-toastify";
 
 export const AppContext = createContext();
 function App() {
@@ -20,12 +21,13 @@ function App() {
   return (
     <AppContext.Provider value={{ language, setLanguage }}>
       <div className="App">
+        <ToastContainer />
         <Router>
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/pool-app-store" element={<OtherPage />} />
             <Route path="/pool-wallet" element={<OtherPage2 />} />
-            <Route path="/pool-app-cards" element={<OtherPage3 />} />
+            <Route path="/pool-cards" element={<OtherPage3 />} />
           </Routes>
         </Router>
       </div>

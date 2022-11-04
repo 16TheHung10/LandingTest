@@ -34,6 +34,9 @@ export const Other3Wrapper = styled.section`
       font-weight: 400;
       line-height: 2.7rem;
     }
+    img {
+      margin-top: 2rem;
+    }
   }
   .img {
     flex: 1;

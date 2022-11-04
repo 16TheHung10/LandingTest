@@ -1,21 +1,35 @@
 import styled from "styled-components";
 import layerImage from "../../assets/images/s21-untra.png";
+import layerImage2 from "../../assets/images/feature-bg-2.png";
 
 export const FeatureWrapper = styled.section`
   min-width: 330px;
-  padding: 6.3rem 23rem 10rem;
+  padding: 6.3rem 24rem 10rem;
   position: relative;
   color: white;
-  background-image: url(${layerImage});
+  background-image: url(${layerImage}), url(${layerImage2});
   background-color: black;
   background-repeat: no-repeat;
-  background-position: 85% -50%;
+  background-position: 100% 17rem;
+  padding-top: 184px;
+  margin-top: 0px;
+  z-index: 99;
   height: 110rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   .content-top {
+    width: 100%;
     z-index: 999;
+
+    h4 {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 60px;
+      color: #a8b7c4;
+      text-align: left;
+    }
     .title {
       background: linear-gradient(90.07deg, #fafafb 0.98%, #21d4ff 89.6%);
       -webkit-background-clip: text;
@@ -23,12 +37,32 @@ export const FeatureWrapper = styled.section`
       text-fill-color: transparent;
       font-size: 9.6rem;
       font-weight: 700;
-      line-height: 14.4rem;
+      line-height: 7.4rem;
       text-align: left;
+      text-transform: uppercase;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      &::after {
+        content: "";
+        position: absolute;
+        background: black;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        background: linear-gradient(
+          180deg,
+          rgb(24 24 24 / 15%) 0%,
+          rgb(0 0 0 / 94%) 86%,
+          rgb(0 0 0) 100%
+        );
+      }
     }
     .description {
       text-align: left;
-      width: 90%;
+      width: 70%;
       display: flex;
       justify-content: flex-start;
       flex-direction: column;
@@ -71,15 +105,41 @@ export const FeatureWrapper = styled.section`
       #000000 94.01%
     );
   }
+
+  @media screen and (max-width: 1400px) {
+    .content-top {
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 1199px) {
+    padding: 6.3rem 15rem 10rem;
+
+    .content-top {
+      .title {
+        font-size: 8.6rem;
+      }
+    }
   }
   @media screen and (max-width: 989px) {
-    padding: 0 5rem;
-    background-position: 100% -8%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-size: contain;
   }
   @media screen and (max-width: 767px) {
-    background-size: cover;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    .content-top {
+      .title {
+        font-size: 7.6rem;
+        line-height: 10.4rem;
+      }
+    }
   }
   @media screen and (max-width: 575px) {
+    .content-top {
+      .title {
+        font-size: 5.6rem;
+      }
+    }
   }
 `;

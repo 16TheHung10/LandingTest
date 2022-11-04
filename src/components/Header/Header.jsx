@@ -1,33 +1,27 @@
 import React, { useContext, useEffect, useState } from "react";
-import { HeaderWrapper } from "./styled";
-import logo from "../../assets/images/logo.png";
-import {
-  AiOutlineSearch,
-  AiFillCaretDown,
-  AiOutlineShopping,
-} from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
+import logo from "../../assets/images/logo.png";
+import { HeaderWrapper } from "./styled";
 export default function Header() {
   const appContext = useContext(AppContext);
+  const [selectedSection, setSelectedSection] = useState("pre-order");
   const { setLanguage } = appContext;
   const params = useLocation();
+  const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const handleChangeLanguage = (e) => {
     const value = e.target.value;
     setLanguage(value);
   };
-  // useEffect(() => {
-  //   i18n.changeLanguage(selectedLanguage);
-  // }, [selectedLanguage]);
-
   useEffect(() => {
     if (params.hash !== "") {
       const element = document.querySelector(params.hash);
-      element.scrollIntoView(params.hash);
+      element.scrollIntoView({ behavior: "smooth" });
     }
   }, [params]);
+  console.log(selectedSection);
   return (
     <HeaderWrapper>
       <header>
@@ -38,15 +32,46 @@ export default function Header() {
         </div>
         <nav>
           <ul className="nav_text">
-            <li className="nav_item active">
-              <NavLink to="/#pre-order">{t("pre-order")}</NavLink>
+            <li
+              className={`nav_item ${
+                selectedSection === "pre-order" ? "active" : ""
+              }`}
+            >
+              <button
+                className="nav_btn"
+                onClick={() => {
+                  setSelectedSection("pre-order");
+                  navigate("/#pre-order");
+                }}
+              >
+                {t("pre-order")}
+              </button>
             </li>
-            <li className="nav_item">
-              <NavLink to="/#pre-installed">{t("pre-installed")}</NavLink>
+            <li
+              className={`nav_item ${
+                selectedSection === "pre-installed" ? "active" : ""
+              }`}
+            >
+              <button
+                className="nav_btn"
+                onClick={() => {
+                  setSelectedSection("pre-installed");
+                  navigate("/#pre-installed");
+                }}
+              >
+                {t("pre-installed")}
+              </button>
             </li>
-            {/* <li className="nav_item">
-              <NavLink to="/support">Support</NavLink>
-            </li> */}
+            <li className={`nav_item `}>
+              <button
+                className="nav_btn"
+                onClick={() => {
+                  navigate("/");
+                }}
+              >
+                {t("pre-installed")}
+              </button>
+            </li>
           </ul>
           <div className="nav_icon">icon</div>
         </nav>

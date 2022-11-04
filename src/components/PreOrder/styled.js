@@ -6,19 +6,18 @@ import preOrder from "../../assets/images/pre-order.png";
 export const PreOrderWrapper = styled.section`
   min-width: 330px;
   display: flex;
-  padding: 24rem 0 0 24rem;
+  padding: 0 0 0 24rem;
   background: black;
   color: white;
   background-image: url(${preOrder});
   background-repeat: no-repeat;
   /* background-position: right;
   background-size: contain; */
-  background-position: 100% 100%;
+  background-position: 0% 100%;
   background-size: initial;
+  padding-top: 25rem;
   .left {
     width: 40%;
-    margin-right: -22rem;
-    margin-top: 10rem;
     margin-bottom: 3rem;
     text-align: left;
     .content {
@@ -63,18 +62,24 @@ export const PreOrderWrapper = styled.section`
     }
   }
   @media screen and (max-width: 1199px) {
+    padding: 15rem 0 0 15rem;
     background-size: cover;
   }
   @media screen and (max-width: 989px) {
-    padding: 24rem 0 0 0;
+    padding: 5rem 10rem;
     .left {
-      width: 90%;
+      width: 100%;
       margin: auto;
     }
   }
   @media screen and (max-width: 767px) {
-    padding: 5 10rem;
+    padding: 5rem 5rem;
   }
   @media screen and (max-width: 575px) {
+    .content {
+      p {
+        text-align: justify;
+      }
+    }
   }
 `;

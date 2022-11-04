@@ -9,6 +9,8 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   background-color: black;
   padding: 7.6rem 0 6.4rem;
+  position: fixed;
+  width: 100%;
   header {
     width: 100%;
     padding: 0 24rem;
@@ -29,6 +31,14 @@ export const HeaderWrapper = styled.div`
           margin-left: 7rem;
           color: white;
           font-weight: 600;
+          .nav_btn {
+            background: transparent;
+            color: white;
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border: none;
+          }
         }
         .active {
           &::after {

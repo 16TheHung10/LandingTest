@@ -4,42 +4,54 @@ import Card1 from "../../assets/images/referal-card-1.png";
 import Card2 from "../../assets/images/referal-card-2.png";
 import Card3 from "../../assets/images/referal-card-3.png";
 import Card4 from "../../assets/images/referal-card-4.png";
+import PhoneImage from "../../assets/images/referral_phome_img.png";
+import img1 from "../../assets/images/referral/1.png";
+import img2 from "../../assets/images/referral/2.png";
+import img3 from "../../assets/images/referral/3.png";
+import img4 from "../../assets/images/referral/4.png";
 import Card from "./Card/Card";
-// const mockCardContent = [
-//   {
-//     img: img1,
-//     title: "Sustainable Revenue",
-//     des: "POOLS is the world's first reward-only phone created by the WEB3 mobile revolution and becomes the best tool for sustainable revenue generation",
-//   },
-//   {
-//     img: img2,
-//     title: "POOLS Society",
-//     des: "Become a part of the POOLS ecosystem now and Build mobile experiences that have never been possible before",
-//   },
-//   {
-//     img: img3,
-//     title: "Decentralized Exchange",
-//     des: "Users can easily swap or trade rewarded tokens at any time on the decentralized exchange 'POOLS’. Furthermore, digital assets can be easily used by staking and participating in the DAO.",
-//   },
-//   {
-//     img: img4,
-//     title: "Decentralized Messenger",
-//     des: "Guaranteed diverse rewards and perfect privacy features. Strong rewards, anonymous, decentralized and Blockchain-powered, easy to use features, transfer crypto via message, available anywhere, perfect security. ",
-//   },
-// ];
+import { useTranslation } from "react-i18next";
+const mockCardContent = [
+  {
+    img: img1,
+    title: "sustainable-revenue",
+    des: "pools-is-the-world's-first-reward-only-phone-created-by-the-web3-mobile-revolution-and-becomes-the-best-tool-for-sustainable-revenue-generation",
+  },
+  {
+    img: img2,
+    title: "pools-society",
+    des: "join-the-pools-ecosystem-today-and-start-creating-mobile-experience-as-you've-never-seen-before.",
+  },
+  {
+    img: img3,
+    title: "decentralized-exchange",
+    des: "users-can-easily-swap-or-trade-rewarded-tokens-at-any-time-on-the-decentralized-exchange-'pools’.-furthermore,-digital-assets-can-be-easily-used-by-staking-and-participating-in-the-dao.",
+  },
+  {
+    img: img4,
+    title: "decentralized-messenger",
+    des: "guaranteed-diverse-rewards-and-perfect-privacy-features",
+  },
+];
 export default function Referral() {
+  const { t, i18n } = useTranslation();
+
   return (
-    <ReferralWrapper>
+    <ReferralWrapper className="container">
       <div className="header">
-        <h3>“It doesn't get any better than this”</h3>
-        <h1>Referral Reward</h1>
+        <h3>{t("‘\"it-doesn't-get-any-better-than-that.”")}</h3>
+        <h1>{t("referral-reward")}</h1>
         <p>
-          Full Spawn's referral reward system provides an amazing amount of
-          profit to the recommender.
+          {t(
+            "the-referral-reward-pools-system-will-generate-a-surprising-profit-when-you-refer-the-product-to-others."
+          )}
         </p>
       </div>
+      <div className="img">
+        <img src={PhoneImage} alt="" />
+      </div>
       <div className="cards">
-        <div className="img-group">
+        {/* <div className="img-group">
           <div className="img">
             <img src={Card1} alt="referral" />
           </div>
@@ -55,7 +67,19 @@ export default function Referral() {
           <div className="img">
             <img src={Card4} alt="referral" />
           </div>
-        </div>
+        </div> */}
+        {mockCardContent.map((item, index) => {
+          const { img, title, des } = item;
+          return (
+            <Card
+              key={index}
+              className="card_item"
+              img={img}
+              des={des}
+              title={title}
+            />
+          );
+        })}
       </div>
     </ReferralWrapper>
   );

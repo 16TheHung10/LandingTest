@@ -1,17 +1,19 @@
 import styled from "styled-components";
+import layerImage from "../../assets/images/reward.png";
 export const RewardWrapper = styled.div`
   min-width: 330px;
   background-color: black;
   padding: 10rem 0;
   color: white;
-  .header {
-    padding: 0 24rem;
-  }
+  background-image: url(${layerImage});
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100rem;
   .content {
     text-align: left;
     width: 70rem;
-    margin-right: auto;
-    margin-bottom: 5rem;
+    margin-left: auto;
 
     p {
       font-style: normal;
@@ -26,14 +28,14 @@ export const RewardWrapper = styled.div`
     h1 {
       font-weight: 600;
       font-size: 6.4rem;
-      line-height: 130%;
+      line-height: 140%;
     }
   }
   .content-bottom {
     display: flex;
     padding-right: 10rem;
     img {
-      width: 60%;
+      width: 55%;
     }
     .detail {
       width: 50%;
@@ -78,6 +80,17 @@ export const RewardWrapper = styled.div`
       }
     }
   }
+  .footer_info {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 3.7rem;
+    }
+  }
   @media screen and (max-width: 1400px) {
     .content-bottom {
       .detail_item {
@@ -110,9 +123,6 @@ export const RewardWrapper = styled.div`
     }
     .content {
       width: auto;
-    }
-    .header {
-      padding: 0 5rem;
     }
   }
   @media screen and (max-width: 767px) {
