@@ -37,7 +37,7 @@ export default function Referral() {
   const { t, i18n } = useTranslation();
 
   return (
-    <ReferralWrapper>
+    <ReferralWrapper className="container">
       <div className="header">
         <h3>{t("‘\"it-doesn't-get-any-better-than-that.”")}</h3>
         <h1>{t("referral-reward")}</h1>

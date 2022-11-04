@@ -7,12 +7,20 @@ export default function Feature() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   return (
-    <FeatureWrapper>
+    <FeatureWrapper className="container">
       <div className="content-top">
-        <h1 className="title">{t("the-future-of-smartphone")}</h1>
+        <h4>THE FUTURE OF</h4>
+        <div className="title">
+          {"smartphone".split("").map((item, index) => {
+            return <span>{item}</span>;
+          })}
+        </div>
+        {/* <h1 className="title">{t("smartphone")}</h1> */}
         <div className="description">
-          <h4>{t("best-performance,-modern")} </h4>
-          <p>{t("feature-des")}</p>
+          {/* <h4>{t("best-performance,-modern")} </h4> */}
+          {/* <p>- {t("feature-des-1")}</p>
+          <p>- {t("feature-des-2")}</p>
+          <p>- {t("feature-des-3")}</p> */}
           {/* <p>A transformative system and model.</p>
           <p>An unprecedented leap in battery life.</p>
           <p>

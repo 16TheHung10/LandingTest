@@ -4,31 +4,31 @@ import UBorder from "../../assets/images/u-border.png";
 
 export const IntroFeatureWrapper = styled.section`
   min-width: 330px;
+  width: 100%;
   background: black;
   .group {
     background-image: url(${ZBorder});
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    width: 102rem;
-    margin: auto;
-    height: 58rem;
-    padding: 11rem 0;
+    width: 100%;
+    height: 60rem;
     mix-blend-mode: screen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     &:nth-child(1) {
       margin: -1rem auto;
     }
     &:last-child {
       background-image: url(${UBorder});
-      width: 72rem;
-      height: 54rem;
-      padding: 9rem;
-      margin: -1rem auto;
+      width: 84%;
     }
     .item {
-      margin-bottom: 16rem;
+      /* margin-bottom: 16rem; */
+      width: 50%;
     }
-    h1 {
+    h3 {
       color: white;
     }
     a {

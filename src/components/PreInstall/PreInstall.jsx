@@ -1,29 +1,29 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { RecapWrapper } from "./styled";
 import RecapImage from "../../assets/images/recap.png";
 import { NavLink } from "react-router-dom";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 
-export default function Recap() {
+function PreInstall(props, ref) {
   const { t, i18n } = useTranslation();
   return (
-    <RecapWrapper>
+    <RecapWrapper ref={ref} className="container">
       <div className="row" id="pre-installed">
         <img src={RecapImage} alt="phone" />
         <div className="detail">
           <div className="detail_item">
-            <h1>{t("pools-app-store")}</h1>
+            <h3>{t("pools-app-store")}</h3>
             <p>Your digital assets will be richer</p>
             <NavLink to="/pool-app-store">{`${t("read-more")} >`}</NavLink>
           </div>
           <div className="detail_item">
-            <h1>POOLS Wallet</h1>
+            <h3>POOLS Wallet</h3>
             <p>Easily manage digital assets</p>
             <NavLink to="/pool-wallet">{`${t("read-more")} >`}</NavLink>
           </div>
           <div className="detail_item">
-            <h1>POOLS Card</h1>
+            <h3>POOLS Card</h3>
             <p>Pools exclusive biometric</p>
             <NavLink to="/pool-cards">{`${t("read-more")} >`}</NavLink>
           </div>
@@ -46,3 +46,4 @@ export default function Recap() {
     </RecapWrapper>
   );
 }
+export default forwardRef(PreInstall);

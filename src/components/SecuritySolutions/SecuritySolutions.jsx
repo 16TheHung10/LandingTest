@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 export default function SecuritySolutions() {
   const { t, i18n } = useTranslation();
   return (
-    <SecurityWrapper>
+    <SecurityWrapper className="container">
       <div className="content">
         <h3>{t("secure-digital-financial-transactions")}</h3>
         <h1>{t("mobile-device-security-solutions")}</h1>

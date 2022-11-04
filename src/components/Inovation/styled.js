@@ -12,9 +12,19 @@ export const InnovationWrapper = styled.section`
     width: 90%;
   }
   .content {
-    width: 55rem;
+    width: 35%;
+    img {
+      width: 40%;
+      margin-top: 2rem;
+    }
   }
   @media screen and (max-width: 1199px) {
+    .content {
+      width: 100%;
+      img {
+        width: 20%;
+      }
+    }
   }
   @media screen and (max-width: 989px) {
   }

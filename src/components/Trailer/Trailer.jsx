@@ -7,7 +7,7 @@ export default function Trailer() {
   const { t, i18n } = useTranslation();
 
   return (
-    <TrailerWrapper>
+    <TrailerWrapper className="container">
       <div className="header">
         <div className="content">
           <h3>{t("trailer")}</h3>
