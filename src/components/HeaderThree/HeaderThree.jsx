@@ -37,7 +37,9 @@ const NavData = [
 ];
 
 export default function HeaderThree({ preOrderRef, prInstallRef }) {
-  const [selectedSection, setSelectedSection] = useState("pre-order");
+  const [selectedSection, setSelectedSection] = useState(
+    localStorage.getItem("selectedSection" || "pre-order")
+  );
   const [isShowMenu, setIsShowMenu] = useState(false);
   const appContext = useContext(AppContext);
   const { setLanguage } = appContext;

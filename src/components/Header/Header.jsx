@@ -40,7 +40,7 @@ const NavData = [
 export default function Header() {
   const appContext = useContext(AppContext);
   const [selectedSection, setSelectedSection] = useState(
-    localStorage.getItem("selectedSection")
+    localStorage.getItem("selectedSection" || "pre-order")
   );
   const [isShowMenu, setIsShowMenu] = useState(false);
   const { setLanguage } = appContext;

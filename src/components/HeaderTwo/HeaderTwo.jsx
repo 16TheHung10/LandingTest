@@ -38,7 +38,7 @@ const NavData = [
 
 export default function HeaderTwo({ preOrderRef, prInstallRef }) {
   const [selectedSection, setSelectedSection] = useState(
-    localStorage.getItem("selectedSection")
+    localStorage.getItem("selectedSection" || "pre-order")
   );
   const [isShowMenu, setIsShowMenu] = useState(false);
   const appContext = useContext(AppContext);
