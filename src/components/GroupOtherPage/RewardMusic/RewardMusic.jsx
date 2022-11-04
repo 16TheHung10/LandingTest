@@ -1,30 +1,34 @@
-import React from 'react'
+import React from "react";
 // import HomeLayoutOtherPage from "../../../layouts/HomeLayoutOtherPage"
-import {HeroRewardMusic} from "./styled"
-import backgroundRewar from "../../../assets/images/img-groud-oderpage/backgroudReward.png"
+import { HeroRewardMusic } from "./styled";
+import backgroundRewar from "../../../assets/images/img-groud-oderpage/backgroudReward.png";
+import { useTranslation } from "react-i18next";
+import HomeLayout from "../../../layouts/HomeLayout";
 
 function RewardMusic() {
+  const { t, i18n } = useTranslation();
   return (
     // <HomeLayoutOtherPage>
-        <HeroRewardMusic className='container'>
-            <div className='wrap_hero'>
-                <div className='img_left'>
-                    <img className='img_item' src={backgroundRewar}/>
-                </div>
+    <HomeLayout>
+      <HeroRewardMusic className="container">
+        <div className="wrap_hero">
+          <div className="img_left">
+            <img className="img_item" src={backgroundRewar} />
+          </div>
 
-                <div className='title_right'>
-                    <h1 className='title_item'>Reward Music</h1>
-                    <h3 className='sub_title'>Listen to music for free and mine tokens every day.</h3>
-                    <p className='desc'>Earn tokens by listening to free music from all genres all 
-                        over the world via radio streaming. Furthermore, users can 
-                        earn even larger rewards by winning the Daily Airdrop Big Event, 
-                        which occurs every day.
-                    </p>
-                </div>
-            </div>
-        </HeroRewardMusic>
+          <div className="title_right">
+            <h1 className="title_item">{t("reward-music")}</h1>
+            <h3 className="sub_title">{t("listen-to-music-for")}</h3>
+            <p className="desc">
+              {t("earn-tokens-by-listening-to-free-music")}
+            </p>
+          </div>
+        </div>
+      </HeroRewardMusic>
+    </HomeLayout>
+
     // </HomeLayoutOtherPage>
-  )
+  );
 }
 
-export default RewardMusic
+export default RewardMusic;

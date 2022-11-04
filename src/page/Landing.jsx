@@ -12,10 +12,10 @@ import Reward from "../components/Reward/Reward";
 import SecuritySolutions from "../components/SecuritySolutions/SecuritySolutions";
 import Trailer from "../components/Trailer/Trailer";
 import PreOderFAQ from "../components/PreOderFAQ/PreOderFAQ";
-import RewardMusic from "../components/GroupOtherPage/RewardMusic/RewardMusic"
-import DecentralizedExchange from "../components/GroupOtherPage/DecentralizedExchange/DecentralizedExchange"
-import NFTCamera from "../components/GroupOtherPage/NFTCamera/NFTCamera"
-import PoolsWallet from "../components/GroupOtherPage/PoolsWallet/PoolsWallet"
+import RewardMusic from "../components/GroupOtherPage/RewardMusic/RewardMusic";
+import DecentralizedExchange from "../components/GroupOtherPage/DecentralizedExchange/DecentralizedExchange";
+import NFTCamera from "../components/GroupOtherPage/NFTCamera/NFTCamera";
+import PoolsWallet from "../components/GroupOtherPage/PoolsWallet/PoolsWallet";
 import { Container } from "./styled";
 import PreInstall from "../components/PreInstall/PreInstall";
 import HeaderTwo from "../components/HeaderTwo/HeaderTwo";
@@ -41,7 +41,7 @@ export default function Landing() {
 
   return (
     <Container>
-      {/* {isChangeHeader ? <HeaderTwo /> : <Header />}
+      {isChangeHeader ? <HeaderTwo /> : <Header />}
       <Feature />
       <Reward />
       <Trailer />
@@ -50,14 +50,9 @@ export default function Landing() {
       <Innovation />
       <PreInstall ref={prInstallRef} />
       <IntroFeature />
-      <CardRecap />
       <PoolParty />
-      <PreOrder /> */}
-      <PreOderFAQ />
-      <RewardMusic />
-      <DecentralizedExchange />
-      <NFTCamera />
-      <PoolsWallet />
+      <PreOrder />
+
       <Footer />
     </Container>
   );

@@ -34,11 +34,11 @@ export default function ContactUs() {
         <div className="form">
           <form ref={formRef} onSubmit={onsubmit}>
             <div className="row">
-              <input name="Name" type="text" placeholder="Name" required />
+              <input name="Name" type="text" placeholder={t("Name")} required />
               <input
                 name="Phone"
                 type="number"
-                placeholder="Phone Number"
+                placeholder={t("Phone-Number")}
                 required
               />
             </div>
@@ -46,7 +46,7 @@ export default function ContactUs() {
               <input
                 name="Email"
                 type="email"
-                placeholder="Email address"
+                placeholder={t("Emaill-Address")}
                 required
               />
             </div>
@@ -56,7 +56,7 @@ export default function ContactUs() {
                 name="Message"
                 id=""
                 cols="30"
-                placeholder="Message"
+                placeholder={t("Message")}
               />
             </div>
             <div className="row">
@@ -65,7 +65,7 @@ export default function ContactUs() {
                   Please waiting for your information is saved...
                 </button>
               ) : (
-                <button>Submit</button>
+                <button>{t("Submit")}</button>
               )}
             </div>
           </form>

@@ -4,7 +4,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
 import { AiOutlineMenu } from "react-icons/ai";
 import logo from "../../assets/images/logo.png";
-import { HeaderTwoWrapper } from "./styled";
+import { HeaderThreeWrapper } from "./styled";
 const NavData = [
   {
     name: "Pre-order",
@@ -36,10 +36,8 @@ const NavData = [
   // },
 ];
 
-export default function HeaderTwo({ preOrderRef, prInstallRef }) {
-  const [selectedSection, setSelectedSection] = useState(
-    localStorage.getItem("selectedSection")
-  );
+export default function HeaderThree({ preOrderRef, prInstallRef }) {
+  const [selectedSection, setSelectedSection] = useState("pre-order");
   const [isShowMenu, setIsShowMenu] = useState(false);
   const appContext = useContext(AppContext);
   const { setLanguage } = appContext;
@@ -59,7 +57,7 @@ export default function HeaderTwo({ preOrderRef, prInstallRef }) {
   }, [params]);
   console.log("re-render");
   return (
-    <HeaderTwoWrapper>
+    <HeaderThreeWrapper>
       <header>
         <div className="logo">
           <NavLink to="/">
@@ -80,7 +78,6 @@ export default function HeaderTwo({ preOrderRef, prInstallRef }) {
                     className="nav_btn"
                     onClick={() => {
                       localStorage.setItem("selectedSection", item.link);
-
                       setSelectedSection(item.link);
                       navigate(`/#${item.link}`);
                     }}
@@ -196,6 +193,6 @@ export default function HeaderTwo({ preOrderRef, prInstallRef }) {
           </div> */}
         </nav>
       </header>
-    </HeaderTwoWrapper>
+    </HeaderThreeWrapper>
   );
 }

@@ -12,7 +12,6 @@ export const Other3Wrapper = styled.section`
   align-items: center;
   color: white;
   padding-left: 27rem;
-  margin-top: -15rem;
   .item {
     width: 35%;
     margin-left: auto;
