@@ -3,10 +3,10 @@ import { useTranslation } from "react-i18next";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
 import logo from "../../assets/images/logo.png";
-import { HeaderWrapper } from "./styled";
-export default function Header() {
-  const appContext = useContext(AppContext);
+import { HeaderTwoWrapper } from "./styled";
+export default function HeaderTwo({ preOrderRef, prInstallRef }) {
   const [selectedSection, setSelectedSection] = useState("pre-order");
+  const appContext = useContext(AppContext);
   const { setLanguage } = appContext;
   const params = useLocation();
   const navigate = useNavigate();
@@ -15,15 +15,16 @@ export default function Header() {
     const value = e.target.value;
     setLanguage(value);
   };
+
   useEffect(() => {
     if (params.hash !== "") {
       const element = document.querySelector(params.hash);
       element.scrollIntoView({ behavior: "smooth" });
     }
   }, [params]);
-  console.log(selectedSection);
+  console.log("re-render");
   return (
-    <HeaderWrapper>
+    <HeaderTwoWrapper>
       <header>
         <div className="logo">
           <NavLink to="/">
@@ -62,16 +63,6 @@ export default function Header() {
                 {t("pre-installed")}
               </button>
             </li>
-            <li className={`nav_item `}>
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-            </li>
           </ul>
           <div className="nav_icon">icon</div>
         </nav>
@@ -95,6 +86,6 @@ export default function Header() {
           </div> */}
         </nav>
       </header>
-    </HeaderWrapper>
+    </HeaderTwoWrapper>
   );
 }

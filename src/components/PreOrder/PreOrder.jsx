@@ -1,8 +1,11 @@
+
 import React, { useRef, useState } from "react";
+
 import preOrder from "../../assets/images/pre-order.png";
 import { PreOrderWrapper } from "./styled";
 import { ReactComponent as WarningIcon } from "../../assets/images/icon-pre-order.svg";
 import { useTranslation } from "react-i18next";
+
 import { toast } from "react-toastify";
 export default function PreOrder() {
   const { t, i18n } = useTranslation();
@@ -28,10 +31,10 @@ export default function PreOrder() {
       });
   };
   return (
-    <PreOrderWrapper>
+    <PreOrderWrapper ref={ref} className="container">
       <div className="left" id="pre-order">
         <div className="content">
-          <h2>{t("pre-order-today-for-$100")}</h2>
+          <h3>{t("pre-order-today-for-$100")}</h3>
           <h1>{t("join-the-waitlist")}</h1>
           <p>
             {t(
@@ -71,9 +74,10 @@ export default function PreOrder() {
           <span>{t("device-expected-to-ship-in-july-2023")}</span>
         </div>
       </div>
-      {/* <div className="right">
-        <img src={preOrder} alt="" />
-      </div> */}
+      <div className="right">
+        <h1>FAQ</h1>
+      </div>
     </PreOrderWrapper>
   );
 }
+export default forwardRef(PreOrder);

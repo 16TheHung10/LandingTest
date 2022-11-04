@@ -6,15 +6,15 @@ import { useTranslation } from "react-i18next";
 export default function IntroFeature() {
   const { t, i18n } = useTranslation();
   return (
-    <IntroFeatureWrapper>
+    <IntroFeatureWrapper className="container">
       <div className="group">
         <div className="item">
-          <h1>{t("decentralized-messenger")}</h1>
+          <h3>{t("decentralized-messenger")}</h3>
           <p>{t("guaranteed-diverse-rewards-and-perfect-privacy-features")}</p>
           <a href="#">{`${t("read-more")} >`} </a>
         </div>
         <div className="item">
-          <h1>{t("nft-camera")}</h1>
+          <h3>{t("nft-camera")}</h3>
           <p>
             {t(
               "all-images-captured-by-the-pools-camera-are-instantly-converted-to-nfts"
@@ -26,19 +26,19 @@ export default function IntroFeature() {
 
       <div className="group">
         <div className="item">
-          <h1>{t("reward-music")}</h1>
+          <h3>{t("reward-music")}</h3>
           <p>{t("listen-to-music-for-free-and-mine-tokens-every-day.")}</p>
           <a href="#">{`${t("read-more")} >`} </a>
         </div>
         <div className="item">
-          <h1>{t("exclusive-shopping-mall")}</h1>
+          <h3>{t("exclusive-shopping-mall")}</h3>
           <p>{t("an-online-shopping-mall-dedicated-to-pools")} </p>
           <a href="#">{`${t("read-more")} >`} </a>
         </div>
       </div>
       <div className="group">
         <div className="item">
-          <h1>{t("nft-marketplace")}</h1>
+          <h3>{t("nft-marketplace")}</h3>
           <p>{t("nft-market-has-no-expense-burden.")}</p>
           <a href="#">{`${t("read-more")} >`} </a>
         </div>

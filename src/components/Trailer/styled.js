@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const TrailerWrapper = styled.div`
   min-width: 330px;
-  padding: 7.5rem 24rem;
   .header {
     width: auto;
     margin-left: auto;
@@ -40,7 +39,6 @@ export const TrailerWrapper = styled.div`
   @media screen and (max-width: 989px) {
   }
   @media screen and (max-width: 767px) {
-    padding: 7.5rem 10rem;
     .header {
     }
   }

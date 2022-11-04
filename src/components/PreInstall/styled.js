@@ -4,11 +4,9 @@ import layerImage from "../../assets/images/s21-untra.png";
 export const RecapWrapper = styled.section`
   min-width: 330px;
   background-color: black;
-  padding: 12.5rem 15rem;
   .row {
     display: flex;
     align-items: center;
-    gap: 10rem;
   }
   img {
     width: 70%;
@@ -64,13 +62,16 @@ export const RecapWrapper = styled.section`
   @media screen and (max-width: 1199px) {
   }
   @media screen and (max-width: 989px) {
+    .detail {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 4rem;
+      justify-content: center;
+      align-items: center;
+    }
     .detail_item {
-      h1 {
-        font-size: 1.6rem;
-      }
-      p {
-        font-size: 1.3rem;
-      }
+      text-align: center;
     }
     .footer_group {
       .footer_item {
@@ -79,11 +80,21 @@ export const RecapWrapper = styled.section`
     }
   }
   @media screen and (max-width: 767px) {
-    padding: 12.5rem 10rem;
   }
   @media screen and (max-width: 575px) {
     .detail {
       flex-wrap: wrap;
+    }
+    .footer {
+      width: 100%;
+      .footer_group {
+        flex-wrap: wrap;
+        .footer_item {
+          width: 50%;
+          border: none;
+          border-bottom: 1px solid white;
+        }
+      }
     }
   }
 `;

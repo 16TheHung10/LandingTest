@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import Slash from "../../assets/images/slash.png";
 
-export const HeaderWrapper = styled.div`
+export const HeaderTwoWrapper = styled.div`
   z-index: 999;
   width: 100%;
   min-width: 330px;
   display: flex;
   justify-content: center;
   background-color: black;
-  padding: 7.6rem 0 6.4rem;
+  padding: 2rem 0;
+  background: black;
   position: fixed;
   width: 100%;
   header {

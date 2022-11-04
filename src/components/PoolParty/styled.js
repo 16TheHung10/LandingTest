@@ -10,7 +10,7 @@ export const PoolPartyWrapper = styled.section`
   color: white;
 
   .content-one {
-    padding: 9.3rem;
+    padding: 9.3rem 0;
     h3 {
       font-size: 3rem;
     }
@@ -52,7 +52,7 @@ export const PoolPartyWrapper = styled.section`
 
     align-items: center;
     .content {
-      margin-top: 19%;
+      margin-top: 17%;
       margin-left: -25rem;
       width: 77.5rem;
       text-align: center;
@@ -77,6 +77,12 @@ export const PoolPartyWrapper = styled.section`
   @media screen and (max-width: 1199px) {
   }
   @media screen and (max-width: 989px) {
+    .content-one {
+      .content {
+        width: 100%;
+        text-align: justify;
+      }
+    }
     .image-2 {
       flex-direction: column;
       justify-content: center;
@@ -87,8 +93,6 @@ export const PoolPartyWrapper = styled.section`
     }
   }
   @media screen and (max-width: 767px) {
-  }
-  @media screen and (max-width: 575px) {
     .image-2 {
       .content {
         width: 100%;
@@ -98,5 +102,7 @@ export const PoolPartyWrapper = styled.section`
         }
       }
     }
+  }
+  @media screen and (max-width: 575px) {
   }
 `;

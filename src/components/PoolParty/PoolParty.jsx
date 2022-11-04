@@ -9,7 +9,7 @@ export default function PoolParty() {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   return (
-    <PoolPartyWrapper>
+    <PoolPartyWrapper className="container">
       <div className="content-one">
         <div className="content">
           {/* <h3> error404 The latest trends with a wealth of information</h3> */}

@@ -6,7 +6,7 @@ export const CardWrapper = styled.div`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 1rem;
-  width: 40%;
+  width: 45%;
   margin-bottom: 50px;
   height: 32vh;
   display: flex;
@@ -62,17 +62,16 @@ export const CardWrapper = styled.div`
     }
   }
   @media screen and (max-width: 820px) {
-    width: 70%;
+    width: 100%;
 
     p {
       font-size: 1.7rem;
     }
   }
   @media screen and (max-width: 500px) {
-    height: 17vh;
+    height: 25vh;
   }
   @media screen and (max-width: 400px) {
-    height: 23vh;
   }
   @media screen and (max-width: 300px) {
     width: 100%;
