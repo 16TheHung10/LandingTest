@@ -8,33 +8,29 @@ import { HeaderWrapper } from "./styled";
 
 const NavData = [
   {
+    name: "POOLS Phone",
+    link: "pre-order",
+  },
+  {
+    name: "Brand Story",
+    link: "pre-installed",
+  },
+  {
     name: "Pre-order",
     link: "pre-order",
   },
   {
-    name: "Pre-installed",
-    link: "pre-installed",
+    name: "News",
+    link: "news",
   },
-  // {
-  //   name: "Support",
-  //   link: "support",
-  // },
-  // {
-  //   name: "Pre-order",
-  //   link: "pre-order",
-  // },
-  // {
-  //   name: "News",
-  //   link: "news",
-  // },
-  // {
-  //   name: "Download",
-  //   link: "download",
-  // },
-  // {
-  //   name: "Support",
-  //   link: "support",
-  // },
+  {
+    name: "Download",
+    link: "download",
+  },
+  {
+    name: "Support",
+    link: "support",
+  },
 ];
 
 export default function Header() {
@@ -192,7 +188,11 @@ export default function Header() {
           <div className="cart feature">
             <AiOutlineShopping fill="white" />
           </div> */}
+        <div className="get_NFT">
+          <span className="item_get">Get POOLS NFT</span>
+        </div>
         </nav>
+
       </header>
     </HeaderWrapper>
   );

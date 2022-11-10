@@ -1,24 +1,24 @@
 import styled from "styled-components";
-import layerImage from "../../assets/images/s21-untra.png";
-import layerImage2 from "../../assets/images/feature-bg-2.png";
+// import layerImage from "../../assets/images/s21-untra.png";
+// import layerImage2 from "../../assets/images/feature-bg-2.png";
+import backgroudfr from "../../assets/new-img/backgroudft.png"
 
 export const FeatureWrapper = styled.section`
   min-width: 330px;
   padding: 6.3rem 24rem 10rem;
   position: relative;
   color: white;
-  background-image: url(${layerImage}), url(${layerImage2});
+  background-image: url(${backgroudfr});
   background-color: black;
   background-repeat: no-repeat;
-  background-position: 100% 25rem;
-  padding-top: 184px;
-  margin-top: 0px;
+  background-position: absolute;
+  background-size: cover;
   z-index: 99;
-  height: 110rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   .content-top {
     width: 100%;
     z-index: 999;
@@ -28,7 +28,7 @@ export const FeatureWrapper = styled.section`
       font-size: 40px;
       line-height: 60px;
       color: #a8b7c4;
-      text-align: left;
+      text-align: right;
     }
     .title {
       background: linear-gradient(90.07deg, #fafafb 0.98%, #21d4ff 89.6%);

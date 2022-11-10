@@ -18,7 +18,6 @@ import NFTCamera from "../components/GroupOtherPage/NFTCamera/NFTCamera";
 import PoolsWallet from "../components/GroupOtherPage/PoolsWallet/PoolsWallet";
 import { Container } from "./styled";
 import PreInstall from "../components/PreInstall/PreInstall";
-import HeaderTwo from "../components/HeaderTwo/HeaderTwo";
 import CardRecap from "../components/IntroFeature/Card/Card";
 
 export default function Landing() {
@@ -41,7 +40,7 @@ export default function Landing() {
 
   return (
     <Container>
-      {isChangeHeader ? <HeaderTwo /> : <Header />}
+      {isChangeHeader ? <Header /> : <Header />}
       <Feature />
       <Reward />
       <Trailer />
@@ -52,7 +51,6 @@ export default function Landing() {
       <IntroFeature />
       <PoolParty />
       <PreOrder />
-
       <Footer />
     </Container>
   );

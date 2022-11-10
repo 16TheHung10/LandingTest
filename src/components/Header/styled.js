@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
   min-width: 330px;
   display: flex;
   justify-content: center;
-  background-color: black;
+  /* background-color: black; */
   padding: 7.6rem 0 6.4rem;
   position: fixed;
   width: 100%;
@@ -100,6 +100,23 @@ export const HeaderWrapper = styled.div`
       }
       .feature {
         cursor: pointer;
+      }
+    }
+
+    .get_NFT {
+      color: white;
+      height: 33px;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+      .item_get {
+        padding: 20px 10px 20px 10px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
       }
     }
   }
