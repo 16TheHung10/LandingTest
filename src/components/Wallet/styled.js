@@ -31,8 +31,12 @@ export const WalletWrapper = styled.section`
     justify-content: center;
   }
 
+  .card_item_odd {
+    width: 30%;
+  }
+
   .card_item {
-    width: 25%;
+    width: 20%;
   }
 
   .item_bg {
@@ -47,7 +51,7 @@ export const WalletWrapper = styled.section`
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
-    padding: 45px 10px 0 30px;
+    padding: 45px 20px 0 50px;
   }
 
   .bg_1 {

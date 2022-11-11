@@ -9,27 +9,27 @@ import { HeaderWrapper } from "./styled";
 const NavData = [
   {
     name: "POOLS Phone",
-    link: "pre-order",
+    link: "",
   },
   {
     name: "Brand Story",
-    link: "pre-installed",
+    link: "",
   },
   {
     name: "Pre-order",
-    link: "pre-order",
+    link: "",
   },
   {
     name: "News",
-    link: "news",
+    link: "",
   },
   {
     name: "Download",
-    link: "download",
+    link: "",
   },
   {
     name: "Support",
-    link: "support",
+    link: "",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function Header() {
     new window.google.translate.TranslateElement(
       {
         pageLanguage: "en",
-        autoDisplay: false
+        autoDisplay: false,
       },
       "google_translate_element"
     );
@@ -82,7 +82,7 @@ export default function Header() {
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
-        
+
         <nav>
           <ul className="nav_text">
             {NavData.map((item, index) => {
@@ -94,58 +94,19 @@ export default function Header() {
                   }`}
                 >
                   <button
-                    className="nav_btn"
+                    className="nav_btn content_p"
                     onClick={() => {
                       setSelectedSection(item.link);
                       navigate(`/#${item.link}`);
                     }}
                   >
-                    {t(item.link)}
+                    {item.name}
                   </button>
                 </li>
               );
             })}
-            {/* <li
-              className={`nav_item ${
-                selectedSection === "pre-order" ? "active" : ""
-              }`}
-            >
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-order");
-                  navigate("/#pre-order");
-                }}
-              >
-                {t("pre-order")}
-              </button>
-            </li>
-            <li
-              className={`nav_item ${
-                selectedSection === "pre-installed" ? "active" : ""
-              }`}
-            >
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-            </li> */}
-            {/* <li className={`nav_item `}>
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-            </li> */}
           </ul>
+
           <div className="nav_icon">
             <div
               className={`mobile_menu ${
@@ -155,36 +116,19 @@ export default function Header() {
               {NavData.map((item, index) => {
                 return (
                   <button
-                    className="nav_btn"
-                    onClick={() => {
-                      setSelectedSection(item.link);
-                      navigate(`"/#${item.link}"`);
-                    }}
+                  className="nav_btn"
+                  onClick={() => {
+                    setSelectedSection(item.link);
+                    navigate(`"/#${item.link}"`);
+                  }}
                   >
                     {t(item.link)}
                   </button>
-                );
-              })}
-              {/* <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button> */}
+                  
+                  );
+                })}
+                {/* <div id="google_translate_element" className="languages"></div> */}
             </div>
-
             <AiOutlineMenu
               onClick={() => setIsShowMenu((prev) => !prev)}
               style={{ fontSize: "5rem" }}
@@ -192,29 +136,9 @@ export default function Header() {
           </div>
         </nav>
         <nav className="nav-config">
-          <div className="languages">
-            <select
-              onChange={handleChangeLanguage}
-              defaultValue={localStorage.getItem("i18nextLng")}
-            >
-              <option value="en">Eng</option>
-              <option value="vi">VN</option>
-              <option value="kr">Kor</option>
-            </select>
-            {/* <AiFillCaretDown fill="white" /> */}
-          </div>
-          {/* <div className="search feature">
-            <AiOutlineSearch fill="white" />
-          </div>
-          <div className="cart feature">
-            <AiOutlineShopping fill="white" />
-          </div> */}
-        <div className="get_NFT">
-          <span className="item_get">Get POOLS NFT</span>
-        </div>
+          <div id="google_translate_element" className=" languages"></div>
         </nav>
-        <div id="google_translate_element"></div>
-      
+          <button className="content_btn">Get POOLS NFT</button>
       </header>
     </HeaderWrapper>
   );

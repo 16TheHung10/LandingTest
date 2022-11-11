@@ -28,6 +28,7 @@ export const SmarterWrapper = styled.section`
     padding: 20px 50px;
     display: flex;
     align-items: center;
+    border: unset;
   }
 
   .btn_img {

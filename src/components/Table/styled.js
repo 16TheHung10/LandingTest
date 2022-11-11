@@ -20,21 +20,24 @@ export const TableWrapper = styled.section`
     border-top: 2px solid #ffffff;
   }
 
-  .content_table tr:first-child{
+  .content_table tr:first-child {
     border: unset;
   }
 
-  .content_table tr:nth-child(2){
-    border-top: 2px solid #21D4FF;
+  .content_table tr:nth-child(2) {
+    border-top: 2px solid #21d4ff;
   }
 
-  .content_p.p_blue {
-    font-size: 600;
+  .content_table th {
     color: #21d4ff;
+    font-weight: 600;
+    font-size: 18px;
   }
 
-  .content_p {
+  .content_table td {
     color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
   }
 
   .tier {
@@ -59,5 +62,32 @@ export const TableWrapper = styled.section`
 
   .purchase {
     width: auto;
+  }
+
+  @media (max-width: 1536px) {
+    .content_table th,
+    .content_table td {
+      font-size: 14px;
+    }
+
+    .tier {
+      width: 80px;
+    }
+
+    .include {
+      width: 150px;
+    }
+
+    .discount {
+      width: 200px;
+    }
+
+    .sale {
+      width: 250px;
+    }
+
+    .app_store {
+      width: 250px;
+    }
   }
 `;

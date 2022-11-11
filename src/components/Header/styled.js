@@ -3,26 +3,29 @@ import Slash from "../../assets/images/slash.png";
 
 export const HeaderWrapper = styled.div`
   z-index: 999;
-  width: 100%;
-  min-width: 330px;
-  display: flex;
-  justify-content: center;
   background-color: transparent;
-  padding: 7.6rem 0 6.4rem;
   position: fixed;
   width: 100%;
+
+  .content_btn {
+    padding: 5px 10px;
+    margin-top: 0;
+  }
+
   header {
-    width: 100%;
-    padding: 0 24rem;
-    font-size: 1.8rem;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
+
     nav {
       .nav_icon {
-        color: white;
+        color: #fff;
         display: none;
         position: relative;
+
         .mobile_menu {
           display: flex;
           flex-direction: column;
@@ -33,67 +36,73 @@ export const HeaderWrapper = styled.div`
           top: 102%;
           z-index: 999;
           width: 40rem;
+
           button {
             background-color: transparent;
-            border: 1px solid white;
+            border: 1px solid #fff;
             padding: 2rem;
-            color: white;
+            color: #fff;
           }
           transition: all 0.5s cubic-bezier(0.2, 0.46, 0.81, 1.41);
         }
       }
+
       ul {
         display: flex;
         justify-content: space-between;
         .nav_item {
           position: relative;
           margin-left: 7rem;
-          color: white;
+          color: #fff;
           font-weight: 600;
           .nav_btn {
             background: transparent;
-            color: white;
-            font-size: 1.9rem;
+            color: #fff;
             font-weight: 600;
-            letter-spacing: 1px;
             border: none;
           }
         }
-        .active {
-          &::after {
-            content: "";
-            position: absolute;
-            background: url(${Slash});
-            width: 100%;
-            top: 100%;
-            left: 0;
-            right: 0;
-            color: red;
-            height: 1rem;
-            background-repeat: no-repeat;
-            background-size: 27rem;
-            width: 101%;
-            background-position: center;
+          .active {
+            &::after {
+              content: "";
+              position: absolute;
+              background: url(${Slash});
+              width: 100%;
+              top: 100%;
+              left: 0;
+              right: 0;
+              color: red;
+              height: 1rem;
+              background-repeat: no-repeat;
+              background-size: 27rem;
+              width: 101%;
+              background-position: center;
+            }
           }
-        }
       }
     }
     .nav-config {
       display: flex;
       gap: 4rem;
-      color: white;
+      color: #fff;
       align-items: center;
+
       .languages {
         select {
           color: #21d4ff;
           background: transparent;
           border: none;
-          font-size: 1.8rem;
+          font-weight: bold;
+          padding: 5px 25px;
+          repeat: none;
         }
+
         option {
-          color: #21d4ff;
-          background: transparent;
+          color: #ffff;
+          font-weight: bold;
+          background: black;
         }
+
         display: flex;
         align-items: center;
         gap: 1rem;
@@ -102,53 +111,31 @@ export const HeaderWrapper = styled.div`
         cursor: pointer;
       }
     }
-
-    .get_NFT {
-      color: white;
-      height: 33px;
-      border: 2px solid white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-}
-      .item_get {
-        padding: 20px 10px 20px 10px;
-        font-size: 18px;
-        line-height: 27px;
-        font-weight: 600;
-      }
-    }
   }
+
   .show_menu {
     transform: scale(1);
   }
+
   .hide_menu {
     transform: translateY(-200%);
   }
 
-  @media screen and (max-width: 1199px) {
-    header {
-      padding: 0 2rem;
-    }
-  }
-  @media screen and (max-width: 989px) {
-  }
   @media screen and (max-width: 767px) {
     .nav_text {
       display: none;
     }
+
     header {
       nav {
         .nav_icon {
           display: inline-block;
         }
       }
+
       .nav-config {
         display: none;
       }
     }
-  }
-  @media screen and (max-width: 575px) {
   }
 `;
