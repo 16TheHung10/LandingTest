@@ -90,4 +90,22 @@ export const TableWrapper = styled.section`
       width: 250px;
     }
   }
+
+  @media (max-width: 768px) {
+    .content {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .content {
+      width: 80%;
+    }
+
+    .content_table{
+      overflow-x: scroll;
+      width: 90%;
+      display: block;
+    }
+  }
 `;

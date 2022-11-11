@@ -69,4 +69,11 @@ export const WalletWrapper = styled.section`
   .bg_4 {
     background-image: url(${bg_4});
   }
+
+  @media (max-width: 350px) {
+    .item_bg p{
+      font-size: 10px;
+      padding: 0;
+    }
+  }
 `;

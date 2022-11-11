@@ -55,4 +55,13 @@ export const FooterWrapper = styled.section`
     color: #ffffff;
     font-family: "Poppins", sans-serif;
   }
+
+  @media (max-width:768px) {
+    .w_content{
+      flex-direction: column;
+    }
+    .right{
+      flex-direction: column;
+    }
+  }
 `;
