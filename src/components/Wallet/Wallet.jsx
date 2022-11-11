@@ -36,7 +36,7 @@ function Wallet() {
           </div>
 
           <div className="content_card">
-            <div className="card_item">
+            <div className="card_item_odd">
               <div className="item_bg bg_1">
                 <p> Digital Asset Management</p>
               </div>
@@ -44,7 +44,7 @@ function Wallet() {
 
             <div className="card_item"></div>
 
-            <div className="card_item">
+            <div className="card_item_odd">
               <div className="item_bg bg_3">
                 <p>Digital Asset Operation</p>
               </div>
@@ -54,7 +54,7 @@ function Wallet() {
 
             <div className="card_item"></div>
 
-            <div className="card_item">
+            <div className="card_item_odd">
               <div className="item_bg bg_2">
                 <p>Digital Asset Transmission</p>
               </div>
@@ -62,7 +62,7 @@ function Wallet() {
 
             <div className="card_item"></div>
 
-            <div className="card_item">
+            <div className="card_item_odd">
               <div className="item_bg bg_4">
                 <p>Digital Asset Trading</p>
               </div>

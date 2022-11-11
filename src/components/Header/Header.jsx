@@ -9,27 +9,27 @@ import { HeaderWrapper } from "./styled";
 const NavData = [
   {
     name: "POOLS Phone",
-    link: "pre-order",
+    link: "",
   },
   {
     name: "Brand Story",
-    link: "pre-installed",
+    link: "",
   },
   {
     name: "Pre-order",
-    link: "pre-order",
+    link: "",
   },
   {
     name: "News",
-    link: "news",
+    link: "",
   },
   {
     name: "Download",
-    link: "download",
+    link: "",
   },
   {
     name: "Support",
-    link: "support",
+    link: "",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Header() {
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
-        
+
         <nav>
           <ul className="nav_text">
             {NavData.map((item, index) => {
@@ -75,58 +75,19 @@ export default function Header() {
                   }`}
                 >
                   <button
-                    className="nav_btn"
+                    className="nav_btn content_p"
                     onClick={() => {
                       setSelectedSection(item.link);
                       navigate(`/#${item.link}`);
                     }}
                   >
-                    {t(item.link)}
+                    {item.name}
                   </button>
                 </li>
               );
             })}
-            {/* <li
-              className={`nav_item ${
-                selectedSection === "pre-order" ? "active" : ""
-              }`}
-            >
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-order");
-                  navigate("/#pre-order");
-                }}
-              >
-                {t("pre-order")}
-              </button>
-            </li>
-            <li
-              className={`nav_item ${
-                selectedSection === "pre-installed" ? "active" : ""
-              }`}
-            >
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-            </li> */}
-            {/* <li className={`nav_item `}>
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  navigate("/");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-            </li> */}
           </ul>
+
           <div className="nav_icon">
             <div
               className={`mobile_menu ${
@@ -146,24 +107,6 @@ export default function Header() {
                   </button>
                 );
               })}
-              {/* <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button>
-              <button
-                className="nav_btn"
-                onClick={() => {
-                  setSelectedSection("pre-installed");
-                  navigate("/#pre-installed");
-                }}
-              >
-                {t("pre-installed")}
-              </button> */}
             </div>
 
             <AiOutlineMenu
@@ -172,29 +115,23 @@ export default function Header() {
             />
           </div>
         </nav>
+
         <nav className="nav-config">
           <div className="languages">
             <select
               onChange={handleChangeLanguage}
               defaultValue={localStorage.getItem("i18nextLng")}
+              className="content_p"
             >
-              <option value="en">Eng</option>
-              <option value="vi">VN</option>
-              <option value="kr">Kor</option>
+              <option value="en" className="content_p">Eng</option>
+              <option value="vi" className="content_p">VN</option>
+              <option value="kr" className="content_p">Kor</option>
             </select>
-            {/* <AiFillCaretDown fill="white" /> */}
-          </div>
-          {/* <div className="search feature">
-            <AiOutlineSearch fill="white" />
-          </div>
-          <div className="cart feature">
-            <AiOutlineShopping fill="white" />
-          </div> */}
-        <div className="get_NFT">
-          <span className="item_get">Get POOLS NFT</span>
-        </div>
-        </nav>
+          </div> 
 
+          <button className="content_btn">Get POOLS NFT
+          </button>
+        </nav>
       </header>
     </HeaderWrapper>
   );
