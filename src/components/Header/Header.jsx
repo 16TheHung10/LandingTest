@@ -55,6 +55,25 @@ export default function Header() {
     }
   }, [params]);
 
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false,
+      },
+      "google_translate_element"
+    );
+  };
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
+
   return (
     <HeaderWrapper>
       <header>
@@ -123,15 +142,22 @@ export default function Header() {
               defaultValue={localStorage.getItem("i18nextLng")}
               className="content_p"
             >
-              <option value="en" className="content_p">Eng</option>
-              <option value="vi" className="content_p">VN</option>
-              <option value="kr" className="content_p">Kor</option>
+              <option value="en" className="content_p">
+                Eng
+              </option>
+              <option value="vi" className="content_p">
+                VN
+              </option>
+              <option value="kr" className="content_p">
+                Kor
+              </option>
             </select>
-          </div> 
-
-          <button className="content_btn">Get POOLS NFT
-          </button>
+          </div>
+          <button className="content_btn">Get POOLS NFT</button>
         </nav>
+        <>
+          <div id="google_translate_element"></div>
+        </>
       </header>
     </HeaderWrapper>
   );
