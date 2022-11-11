@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header/Header";
-import HeaderThree from "../components/HeaderThree/HeaderThree";
+// import HeaderThree from "../components/HeaderThree/HeaderThree";
 
 export default function HomeLayout({ children }) {
   useEffect(() => {
@@ -8,8 +8,8 @@ export default function HomeLayout({ children }) {
   }, []);
   return (
     <div>
-      <HeaderThree />
-      <div style={{ background: "black", height: "100vh" }}>{children}</div>
+      <Header />
+      <div style={{ height: "100vh" }}>{children}</div>
       {/* {children} */}
     </div>
   );

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import Header from "../components/Header/Header";
-import HeaderTwo from "../components/HeaderTwo/HeaderTwo";
 
 import { Container } from "./styled";
 
@@ -60,7 +59,7 @@ export default function Landing() {
       {/* <Download/> */}
       {/* <Brand/> */}
 
-      {isChangeHeader ? <HeaderTwo /> : <Header />}
+      {isChangeHeader ? <Header /> : <Header />}
       <Home />
       <Smartphone/>
       <Project/>

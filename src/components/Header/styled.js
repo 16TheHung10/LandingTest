@@ -102,6 +102,23 @@ export const HeaderWrapper = styled.div`
         cursor: pointer;
       }
     }
+
+    .get_NFT {
+      color: white;
+      height: 33px;
+      border: 2px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+      .item_get {
+        padding: 20px 10px 20px 10px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 600;
+      }
+    }
   }
   .show_menu {
     transform: scale(1);
