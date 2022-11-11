@@ -55,6 +55,25 @@ export default function Header() {
     }
   }, [params]);
 
+  const googleTranslateElementInit = () => {
+    new window.google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  };
+  useEffect(() => {
+    var addScript = document.createElement("script");
+    addScript.setAttribute(
+      "src",
+      "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    );
+    document.body.appendChild(addScript);
+    window.googleTranslateElementInit = googleTranslateElementInit;
+  }, []);
+
   return (
     <HeaderWrapper>
       <header>
@@ -194,7 +213,10 @@ export default function Header() {
           <span className="item_get">Get POOLS NFT</span>
         </div>
         </nav>
-
+        <>
+      <div id="google_translate_element"></div>
+    </>
+      
       </header>
     </HeaderWrapper>
   );
