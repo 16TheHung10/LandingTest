@@ -4,7 +4,7 @@ export const BenefitsWrapper = styled.section`
   background: #000000;
 
   .content{
-    width: 65%;
+    width: 80%;
   }
 
   .content_title{

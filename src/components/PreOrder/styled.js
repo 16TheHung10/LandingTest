@@ -75,4 +75,19 @@ export const PreOrderWrapper = styled.section`
     color: #b4b4b4;
     text-align: left;
   }
+
+  @media (max-width: 46.1875em) {
+    .content_left {
+      width: 100%;
+      background: #000000b8;
+      min-height: 70%;
+      margin: auto;
+    }
+
+    .content {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: 46.25em) and (max-width: 63.9375em)
 `;

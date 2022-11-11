@@ -325,7 +325,7 @@ display: none;
 
 @media (max-width: 768px) {
   .content{
-    height: 45vh;
+    height: 100vh;
   }
 }
 
