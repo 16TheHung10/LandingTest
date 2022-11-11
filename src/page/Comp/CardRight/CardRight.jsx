@@ -8,7 +8,7 @@ export default function CardRight({ title1, title2, des1, des2, alignLeft }) {
       <div className="section-one">
         <h1>{title1}</h1>
         <p>{des1}</p>
-        <button>{`${t("read-more")} >`}</button>
+        <button>{`${t("read_more")} >`}</button>
       </div>
       <div className="section-two">
         <h1>{title2}</h1>

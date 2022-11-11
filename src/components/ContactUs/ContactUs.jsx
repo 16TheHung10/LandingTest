@@ -30,7 +30,7 @@ export default function ContactUs() {
   return (
     <HomeLayout>
       <ContactUsWrapper className="container">
-        <h1 className="title">{t("Contact-us")}</h1>
+        <h1 className="title">{t("contact-us")}</h1>
         <div className="form">
           <form ref={formRef} onSubmit={onsubmit}>
             <div className="row">

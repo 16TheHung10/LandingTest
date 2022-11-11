@@ -1,66 +1,58 @@
 import styled from "styled-components";
-import ZBorder from "../../assets/images/z_border.png";
-import UBorder from "../../assets/images/u-border.png";
 
 export const FooterWrapper = styled.section`
-  min-width: 330px;
-  display: flex;
   background: linear-gradient(91.94deg, #223037 0%, #00090d 100%);
-  justify-content: space-between;
-  padding: 6rem 16rem;
-  gap: 7rem;
-  align-items: center;
+  
+  .w_content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    align-items: center;
+  }
+
   .left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    .logo {
-      width: 11rem;
-    }
-    img {
-      width: 100%;
-    }
   }
+
+  .img_logo {
+    width: 115px;
+    height: 87px;
+    margin-bottom: 50px;
+  }
+
+  .socials_link {
+    display: flex;
+    align-items: center;
+  }
+
+  .socials_item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    margin-top: 0;
+  }
+
+  .socials_item:last-child {
+    margin-right: 0;
+  }
+
   .right {
     display: flex;
-    flex-wrap: nowrap;
-    text-align: left;
-    width: 50%;
-    justify-content: space-evenly;
-    text-align: revert;
-    a {
-      font-size: 2rem;
-      color: white;
-      width: calc(100% / 3);
-    }
+    justify-content: space-between;
+    width: 45%;
   }
-  .socials-link {
-    display: flex;
-    gap: 2rem;
-  }
-  .socials {
-    background: white;
-    height: 3rem;
-    aspect-ratio: 1/1;
-    width: 3rem;
-    padding: 2px;
-    border-radius: 5px;
-  }
-  @media screen and (max-width: 1199px) {
-  }
-  @media screen and (max-width: 989px) {
-    padding: 6rem 10rem;
-  }
-  @media screen and (max-width: 767px) {
-    padding: 6rem 5rem;
-    .right {
-      a {
-        font-size: 1.6rem;
-      }
-    }
-  }
-  @media screen and (max-width: 575px) {
+
+  .text_item {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
   }
 `;

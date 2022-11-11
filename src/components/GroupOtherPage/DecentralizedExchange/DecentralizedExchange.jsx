@@ -17,7 +17,7 @@ function DecentralizedExchange() {
                 <div className='conten'></div>
 
                 <div className='title'> 
-                    <h1 className='title_item'>{t("decentralized-exchange")}</h1>
+                    <h1 className='title_item'>{t("decentralized_exchange")}</h1>
                     <p className='desc'>{t("users_can_easily_swap_trade_rewarded_tokens_time_decentralized_exchange_pools_furthermore_digital_assets_can_easily_used_staking_participating_dao")}
                     </p>
                 </div>

@@ -17,7 +17,7 @@ function RewardMusic() {
           </div>
 
           <div className="title_right">
-            <h1 className="title_item">{t("reward-music")}</h1>
+            <h1 className="title_item">{t("reward_music")}</h1>
             <h3 className="sub_title">{t("listen-to-music-for")}</h3>
             <p className="desc">
               {t("earn-tokens-by-listening-to-free-music")}

@@ -15,7 +15,7 @@ export default function ShoppingMall() {
           </div>
           <div className="content-text">
             <div className="h1">
-              <h1> {t("exclusive-shopping-mall")} </h1>
+              <h1> {t("exclusive_shopping_mall")} </h1>
             </div>
 
             <p>{t("shopping-h3-2")}</p>

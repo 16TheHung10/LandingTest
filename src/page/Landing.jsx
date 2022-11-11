@@ -1,30 +1,45 @@
 import React, { useEffect, useRef, useState } from "react";
-import Feature from "../components/Feature/Feature";
-import Footer from "../components/Footer/Footer";
+
 import Header from "../components/Header/Header";
-import Innovation from "../components/Inovation/Innovation";
-import IntroFeature from "../components/IntroFeature/IntroFeature";
-import PoolParty from "../components/PoolParty/PoolParty";
-import { PoolPartyWrapper } from "../components/PoolParty/styled";
-import PreOrder from "../components/PreOrder/PreOrder";
-import Referral from "../components/Referral/Referral";
-import Reward from "../components/Reward/Reward";
-import SecuritySolutions from "../components/SecuritySolutions/SecuritySolutions";
-import Trailer from "../components/Trailer/Trailer";
-import PreOderFAQ from "../components/PreOderFAQ/PreOderFAQ";
-import RewardMusic from "../components/GroupOtherPage/RewardMusic/RewardMusic";
-import DecentralizedExchange from "../components/GroupOtherPage/DecentralizedExchange/DecentralizedExchange";
-import NFTCamera from "../components/GroupOtherPage/NFTCamera/NFTCamera";
-import PoolsWallet from "../components/GroupOtherPage/PoolsWallet/PoolsWallet";
-import { Container } from "./styled";
-import PreInstall from "../components/PreInstall/PreInstall";
 import HeaderTwo from "../components/HeaderTwo/HeaderTwo";
-import CardRecap from "../components/IntroFeature/Card/Card";
+
+import { Container } from "./styled";
+
+import Footer from "../components/Footer/Footer";
+import PreOrder from "../components/PreOrder/PreOrder";
+import ReadyToStart from "../components/ReadyToStart/ReadyToStart";
+import News from "../components/News/News";
+import Partner from "../components/Partner/Partner";
+import Roadmap from "../components/Roadmap/Roadmap";
+import PoolsPhone from "../components/PoolsPhone/PoolsPhone";
+// import Video from "../components/Video/Video";
+import PoolParty from "../components/Consume/Consume";
+import Marketplace from "../components/Marketplace/Marketplace";
+import Camera from "../components/Camera/Camera";
+import OpenMarket from "../components/OpenMarket/OpenMarket";
+import CardPayment from "../components/CardPayment/CardPayment";
+import Wallet from "../components/Wallet/Wallet";
+import Smarter from "../components/Smarter/Smarter";
+import AppStore from "../components/AppStore/AppStore";
+import Referral from "../components/Referral/Referral";
+import EarnPhone from "../components/EarnPhone/EarnPhone";
+import Donation from "../components/Donation/Donation";
+import Project from "../components/Project/Project";
+import Home from "../components/Home/Home";
+import Download from "../components/Download/Download";
+import Brand from "../components/Brand/Brand";
+import Smartphone from "../components/Smartphone/Smartphone";
+import Lifestyle from "../components/Lifestyle/Lifestyle";
+import PoolsId from "../components/PoolsId/PoolsId";
+import Enjoy from "../components/Enjoy/Enjoy";
+import PhoneMaker from "../components/PhoneMaker/PhoneMaker";
+import Benefits from "../components/Benefits/Benefits";
+import Table from "../components/Table/Table";
+import Development from "../components/Development/Development";
 
 export default function Landing() {
   const [isChangeHeader, setIsChangeHeader] = useState();
-  const preOrderRef = useRef();
-  const prInstallRef = useRef();
+
   const watchScroll = () => {
     if (window.scrollY >= 300) {
       setIsChangeHeader(true);
@@ -32,6 +47,7 @@ export default function Landing() {
       setIsChangeHeader(false);
     }
   };
+
   useEffect(() => {
     window.addEventListener("scroll", watchScroll);
     return () => {
@@ -41,18 +57,38 @@ export default function Landing() {
 
   return (
     <Container>
-      {isChangeHeader ? <HeaderTwo /> : <Header />}
-      <Feature />
-      <Reward />
-      <Trailer />
-      <Referral />
-      <SecuritySolutions />
-      <Innovation />
-      <PreInstall ref={prInstallRef} />
-      <IntroFeature />
-      <PoolParty />
-      <PreOrder />
+      {/* <Download/> */}
+      {/* <Brand/> */}
 
+      {isChangeHeader ? <HeaderTwo /> : <Header />}
+      <Home />
+      <Smartphone/>
+      <Project/>
+      <Donation/>
+      <Lifestyle/>
+      <EarnPhone/>
+      <Referral />
+      <AppStore/>
+      <Smarter />
+      <PoolsId/>
+      <Wallet />
+      <CardPayment />
+      <OpenMarket />
+      <Enjoy/>
+      <Camera />
+      <Marketplace />
+      <PhoneMaker/>
+      <Benefits/>
+      <Table/>
+      <PoolParty />
+      <Development/>
+      {/* <Video /> */}
+      {/* <PoolsPhone /> */}
+      {/* <Roadmap /> */}
+      {/* <Partner /> */}
+      {/* <News /> */}
+      <ReadyToStart />
+      <PreOrder />
       <Footer />
     </Container>
   );

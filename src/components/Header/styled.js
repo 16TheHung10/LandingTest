@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
   min-width: 330px;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: transparent;
   padding: 7.6rem 0 6.4rem;
   position: fixed;
   width: 100%;

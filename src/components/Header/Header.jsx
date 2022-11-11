@@ -51,13 +51,14 @@ export default function Header() {
     const value = e.target.value;
     setLanguage(value);
   };
+
   useEffect(() => {
     if (params.hash !== "") {
       const element = document.querySelector(params.hash);
       element.scrollIntoView({ behavior: "smooth" });
     }
   }, [params]);
-  console.log(selectedSection);
+
   return (
     <HeaderWrapper>
       <header>
@@ -66,6 +67,7 @@ export default function Header() {
             <img src={logo} alt="logo" />
           </NavLink>
         </div>
+        
         <nav>
           <ul className="nav_text">
             {NavData.map((item, index) => {

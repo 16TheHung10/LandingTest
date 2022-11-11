@@ -73,12 +73,12 @@
 //             <div className="prices">
 //               <p>100$</p>
 //               <button onClick={() => navigate("/#pre-order")}>
-//                 {t("pre-order-now")}
+//                 {t("pre_order_now")}
 //               </button>
 //             </div>
 //             <div className="warning">
 //               <WarningIcon width={50} />
-//               <span>{t("device-expected-to-ship-in-july-2023")}</span>
+//               <span>{t("device_expected_to_ship_in_july_2023")}</span>
 //             </div>
 //           </div>
 //         </div>

@@ -8,8 +8,8 @@ export default function Decentralized() {
     <HomeLayout>
       <DecentralizedWrapper className="container">
         <div className="title">
-          <h1>{t("decentralized-messenger")}</h1>
-          <p>{t("guaranteed-diverse-rewards-and-perfect-privacy-features")}</p>
+          <h1>{t("decentralized_messenger")}</h1>
+          <p>{t("guaranteed_diverse_rewards_and_perfect_privacy_features")}</p>
         </div>
         <div className="content">
           <div className="row">
