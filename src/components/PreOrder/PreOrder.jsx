@@ -34,12 +34,13 @@ function PreOrder() {
           <h3 className="content_t">Pre-order today for $100</h3>
           <h1 className="content_title">Join the Waitlist</h1>
           <p className="content_p">
-            To reserve your spot on the waitlist, enter your information,
-            connect your wallet and make a $100 USDC refundable deposit. Once
-            payment is complete, you'll be added to the waitlist and be notified
-            once it's time to complete your order Getting on the waitlist for
-            Saga requires a $100 USDC deposit. The deposit mount will be
-            deducted from the final purchase price of the Poolsphone.
+            Enter your information, connect your wallet, and make a $100 USDC
+            refundable deposit to reserve your place on the waitlist. once your
+            payment has been accepted, you will be added to the waitlist and
+            notified when it is time to complete your order. To be secured a
+            seat to the Pools waitlist, a $100 USDC deposit is required. The
+            deposit will be deducted from the final purchase price of the Pools
+            phone.
           </p>
 
           <form

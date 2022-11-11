@@ -40,7 +40,7 @@ export const PreOrderWrapper = styled.section`
     font-weight: 600;
     font-size: 18px;
     color: #fff;
-    margin-top: 45px;
+    margin-top: 30px;
   }
 
   .content_input::placeholder {
@@ -73,5 +73,6 @@ export const PreOrderWrapper = styled.section`
     font-weight: 400;
     font-size: 10px;
     color: #b4b4b4;
+    text-align: left;
   }
 `;

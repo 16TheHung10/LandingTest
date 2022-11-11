@@ -45,7 +45,7 @@ export const NewsWrapper = styled.section`
 
   .item_img {
     width: 100%;
-    height: 280px;
+    height: 250px;
   }
 
   .item_text {

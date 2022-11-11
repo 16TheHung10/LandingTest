@@ -6,12 +6,6 @@ import { Container } from "./styled";
 
 import Footer from "../components/Footer/Footer";
 import PreOrder from "../components/PreOrder/PreOrder";
-import ReadyToStart from "../components/ReadyToStart/ReadyToStart";
-// import News from "../components/News/News";
-// import Partner from "../components/Partner/Partner";
-// import Roadmap from "../components/Roadmap/Roadmap";
-// import PoolsPhone from "../components/PoolsPhone/PoolsPhone";
-// import Video from "../components/Video/Video";
 import PoolParty from "../components/Consume/Consume";
 import Marketplace from "../components/Marketplace/Marketplace";
 import Camera from "../components/Camera/Camera";
@@ -25,8 +19,6 @@ import EarnPhone from "../components/EarnPhone/EarnPhone";
 import Donation from "../components/Donation/Donation";
 import Project from "../components/Project/Project";
 import Home from "../components/Home/Home";
-import Download from "../components/Download/Download";
-import Brand from "../components/Brand/Brand";
 import Smartphone from "../components/Smartphone/Smartphone";
 import Lifestyle from "../components/Lifestyle/Lifestyle";
 import PoolsId from "../components/PoolsId/PoolsId";
@@ -56,37 +48,28 @@ export default function Landing() {
 
   return (
     <Container>
-      {/* <Download/> */}
-      {/* <Brand/> */}
-
       {isChangeHeader ? <Header /> : <Header />}
       <Home />
-      <Smartphone/>
-      <Project/>
-      <Donation/>
-      <Lifestyle/>
-      <EarnPhone/>
+      <Smartphone />
+      <Project />
+      <Donation />
+      <Lifestyle />
+      <EarnPhone />
       <Referral />
-      <AppStore/>
+      <AppStore />
       <Smarter />
-      <PoolsId/>
+      <PoolsId />
       <Wallet />
       <CardPayment />
       <OpenMarket />
-      <Enjoy/>
+      <Enjoy />
       <Camera />
       <Marketplace />
-      <PhoneMaker/>
-      <Benefits/>
-      <Table/>
       <PoolParty />
-      <Development/>
-      {/* <Video /> */}
-      {/* <PoolsPhone /> */}
-      {/* <Roadmap /> */}
-      {/* <Partner /> */}
-      {/* <News /> */}
-      <ReadyToStart />
+      <Development />
+      <PhoneMaker />
+      <Benefits />
+      <Table />
       <PreOrder />
       <Footer />
     </Container>

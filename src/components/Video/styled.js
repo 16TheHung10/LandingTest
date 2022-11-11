@@ -9,6 +9,7 @@ export const VideoWrapper = styled.section`
 
   .content {
     height: 200vh;
+    width: 100%;
   }
 
   .content_video{
@@ -20,6 +21,6 @@ export const VideoWrapper = styled.section`
 
   .video_intro{
     width: 100%;
-    height: 80%;
+    height: 100%;
   }
 `;

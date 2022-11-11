@@ -13,7 +13,7 @@ const NavData = [
   },
   {
     name: "Brand Story",
-    link: "",
+    link: "brand-story",
   },
   {
     name: "Pre-order",
@@ -21,11 +21,11 @@ const NavData = [
   },
   {
     name: "News",
-    link: "",
+    link: "news",
   },
   {
     name: "Download",
-    link: "",
+    link: "download",
   },
   {
     name: "Support",
@@ -97,7 +97,7 @@ export default function Header() {
                     className="nav_btn content_p"
                     onClick={() => {
                       setSelectedSection(item.link);
-                      navigate(`/#${item.link}`);
+                      navigate(`/${item.link}`);
                     }}
                   >
                     {item.name}
@@ -119,7 +119,7 @@ export default function Header() {
                     className="nav_btn"
                     onClick={() => {
                       setSelectedSection(item.link);
-                      navigate(`"/#${item.link}"`);
+                      navigate(`"/${item.link}"`);
                     }}
                   >
                     {t(item.link)}
@@ -155,9 +155,8 @@ export default function Header() {
           </div>
           <button className="content_btn">Get POOLS NFT</button>
         </nav>
-        <>
-          <div id="google_translate_element"></div>
-        </>
+s
+        <div id="google_translate_element"></div>
       </header>
     </HeaderWrapper>
   );
