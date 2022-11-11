@@ -213,9 +213,7 @@ export default function Header() {
           <span className="item_get">Get POOLS NFT</span>
         </div>
         </nav>
-        <>
-      <div id="google_translate_element"></div>
-    </>
+        <div id="google_translate_element"></div>
       
       </header>
     </HeaderWrapper>
