@@ -116,47 +116,42 @@ export default function Header() {
               {NavData.map((item, index) => {
                 return (
                   <button
+<<<<<<< HEAD
                     className="nav_btn"
                     onClick={() => {
                       setSelectedSection(item.link);
                       navigate(`"/${item.link}"`);
                     }}
+=======
+                  className="nav_btn"
+                  onClick={() => {
+                    setSelectedSection(item.link);
+                    navigate(`"/#${item.link}"`);
+                  }}
+>>>>>>> 2d88b153af1ae420e63d639a3fe23a8ce3a3e578
                   >
                     {t(item.link)}
                   </button>
-                );
-              })}
+                  
+                  );
+                })}
+                {/* <div id="google_translate_element" className="languages"></div> */}
             </div>
-
             <AiOutlineMenu
               onClick={() => setIsShowMenu((prev) => !prev)}
               style={{ fontSize: "5rem" }}
             />
           </div>
         </nav>
-
         <nav className="nav-config">
-          <div className="languages">
-            <select
-              onChange={handleChangeLanguage}
-              defaultValue={localStorage.getItem("i18nextLng")}
-              className="content_p"
-            >
-              <option value="en" className="content_p">
-                Eng
-              </option>
-              <option value="vi" className="content_p">
-                VN
-              </option>
-              <option value="kr" className="content_p">
-                Kor
-              </option>
-            </select>
-          </div>
-          <button className="content_btn">Get POOLS NFT</button>
+          <div id="google_translate_element" className=" languages"></div>
         </nav>
+<<<<<<< HEAD
 s
         <div id="google_translate_element"></div>
+=======
+          <button className="content_btn">Get POOLS NFT</button>
+>>>>>>> 2d88b153af1ae420e63d639a3fe23a8ce3a3e578
       </header>
     </HeaderWrapper>
   );

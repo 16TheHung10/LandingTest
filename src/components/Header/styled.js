@@ -62,23 +62,23 @@ export const HeaderWrapper = styled.div`
             border: none;
           }
         }
-        .active {
-          &::after {
-            content: "";
-            position: absolute;
-            background: url(${Slash});
-            width: 100%;
-            top: 100%;
-            left: 0;
-            right: 0;
-            color: red;
-            height: 1rem;
-            background-repeat: no-repeat;
-            background-size: 27rem;
-            width: 101%;
-            background-position: center;
+          .active {
+            &::after {
+              content: "";
+              position: absolute;
+              background: url(${Slash});
+              width: 100%;
+              top: 100%;
+              left: 0;
+              right: 0;
+              color: red;
+              height: 1rem;
+              background-repeat: no-repeat;
+              background-size: 27rem;
+              width: 101%;
+              background-position: center;
+            }
           }
-        }
       }
     }
     .nav-config {
@@ -94,8 +94,9 @@ export const HeaderWrapper = styled.div`
           border: none;
           font-weight: bold;
           padding: 5px 25px;
+          repeat: none;
         }
-        
+
         option {
           color: #ffff;
           font-weight: bold;
