@@ -347,3 +347,44 @@ display: none;
   }
 }
 
+/* custom antd */
+.ant-collapse {
+  background-color: black !important;
+  color: white !important;
+  border: 1px dashed #9747FF !important;
+  border-radius: 5px !important;
+}
+
+.ant-collapse-header {
+  flex-direction: row-reverse;
+  color: white !important;
+}
+
+.ant-collapse-header-text {
+  text-align: left;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.ant-collapse-content-box {
+  text-align: left;
+}
+
+.ant-collapse .ant-collapse-item {
+  border-bottom: unset !important;
+}
+
+.ant-collapse-content {
+  color: white !important;
+  background-color: black !important;
+  border-top: unset !important;
+}
+
+@media(max-width:768px) {
+  .ant-collapse-header-text {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+

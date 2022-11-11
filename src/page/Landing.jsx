@@ -27,6 +27,7 @@ import PhoneMaker from "../components/PhoneMaker/PhoneMaker";
 import Benefits from "../components/Benefits/Benefits";
 import Table from "../components/Table/Table";
 import Development from "../components/Development/Development";
+import PreOderFAQ from "../components/PreOderFAQ/PreOderFAQ"
 
 export default function Landing() {
   const [isChangeHeader, setIsChangeHeader] = useState();
@@ -71,6 +72,7 @@ export default function Landing() {
       <Benefits />
       <Table />
       <PreOrder />
+      <PreOderFAQ />
       <Footer />
     </Container>
   );
