@@ -19,13 +19,19 @@ export const LifestyleWrapper = styled.section`
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: fit-content;
-    padding: 30px 50px;
+    width: 62%;
     text-align: left;
   }
 
+  .content_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
   .content_content {
-    width: fit-content;
+    width: 35%;
   }
 
   .content_text {
@@ -36,11 +42,17 @@ export const LifestyleWrapper = styled.section`
 
   .p_border {
     color: #fff;
-    padding: 10px 40px;
+    width: calc(100% / 3);
     border-right: 1px solid #a8b7c4;
   }
 
   .p_border:last-child {
     border-right: none;
+  }
+
+  @media (max-width: 768px) {
+    .content_text{
+      flex-direction: column;
+    }
   }
 `;

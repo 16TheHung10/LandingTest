@@ -7,7 +7,8 @@ function EarnPhone() {
       <div className="content">
         <div className="content_left">
           <h3 className="content_t">01. Differentiation</h3>
-          <h1 className="content_title">Phone-to-Earn Phone</h1>
+          <h1 className="content_title">Earn Phone</h1>
+          <h3 className="content_t">Phone-to-Earn Phone</h3>
           <p className="content_pt text_ilatic">
             Turn on the DOLLAR Phone, the Rewards starts
           </p>

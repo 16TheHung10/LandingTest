@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Slash from "../../assets/images/slash.png";
+import btn_img from "../../assets/header/bg_item.png";
 
 export const HeaderWrapper = styled.div`
   z-index: 999;
@@ -10,6 +10,15 @@ export const HeaderWrapper = styled.div`
   .content_btn {
     padding: 5px 10px;
     margin-top: 0;
+  }
+
+  .active.nav_item .nav_btn{
+    background-image: url(${btn_img});
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: #21d4ff;
   }
 
   header {
@@ -32,16 +41,21 @@ export const HeaderWrapper = styled.div`
           background: black;
           padding: 2rem;
           position: absolute;
-          right: 0;
-          top: 102%;
+          top: 0;
+          left: 100%;
+          transform: translate(-50%, 50%);
           z-index: 999;
-          width: 40rem;
+          width: 250px;
 
           button {
             background-color: transparent;
-            border: 1px solid #fff;
+            border: none;
             padding: 2rem;
-            color: #fff;
+
+            &:hover,
+            &:hover {
+              color: #21d4ff;
+            }
           }
           transition: all 0.5s cubic-bezier(0.2, 0.46, 0.81, 1.41);
         }
@@ -62,23 +76,6 @@ export const HeaderWrapper = styled.div`
             border: none;
           }
         }
-          .active {
-            &::after {
-              content: "";
-              position: absolute;
-              background: url(${Slash});
-              width: 100%;
-              top: 100%;
-              left: 0;
-              right: 0;
-              color: red;
-              height: 1rem;
-              background-repeat: no-repeat;
-              background-size: 27rem;
-              width: 101%;
-              background-position: center;
-            }
-          }
       }
     }
     .nav-config {
@@ -94,7 +91,6 @@ export const HeaderWrapper = styled.div`
           border: none;
           font-weight: bold;
           padding: 5px 25px;
-          repeat: none;
         }
 
         option {
@@ -121,7 +117,7 @@ export const HeaderWrapper = styled.div`
     transform: translateY(-200%);
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 912px) {
     .nav_text {
       display: none;
     }

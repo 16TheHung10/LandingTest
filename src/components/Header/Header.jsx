@@ -13,23 +13,23 @@ const NavData = [
   },
   {
     name: "Brand Story",
-    link: "brand-story",
+    link: "/brand-story",
   },
   {
     name: "Pre-order",
-    link: "",
+    link: "/pre-order",
   },
   {
     name: "News",
-    link: "news",
+    link: "/news",
   },
   {
     name: "Download",
-    link: "download",
+    link: "/download",
   },
   {
     name: "Support",
-    link: "",
+    link: "/",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Header() {
                     className="nav_btn content_p"
                     onClick={() => {
                       setSelectedSection(item.link);
-                      navigate(`/${item.link}`);
+                      navigate(`${item.link}`);
                     }}
                   >
                     {item.name}
@@ -116,13 +116,15 @@ export default function Header() {
               {NavData.map((item, index) => {
                 return (
                   <button
-                  className="nav_btn"
-                  onClick={() => {
-                    setSelectedSection(item.link);
-                    navigate(`"/#${item.link}"`);
-                  }}
+                    className={`nav_btn content_t ${
+                      selectedSection === item.link ? "active" : ""
+                    }`}
+                    onClick={() => {
+                      setSelectedSection(item.link);
+                      navigate(`${item.link}`);
+                    }}
                   >
-                    {t(item.link)}
+                    {item.name}
                   </button>
                   
                   );

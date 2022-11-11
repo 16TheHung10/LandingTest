@@ -35,4 +35,10 @@ export const PoolsIdWrapper = styled.section`
     font-size: 18px;
     color: #ffffff;
   }
+
+  @media (max-width: 768px) {
+    .right_content{
+    padding-left: 0;
+  }
+  }
 `;
