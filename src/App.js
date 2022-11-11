@@ -8,6 +8,8 @@ import { ToastContainer } from "react-toastify";
 import Download from "./page/Download";
 import BrandStory from "./page/BrandStory";
 import News from "./page/News";
+import PreOrder from "./page/PreOrder";
+import PoolsPhone from "./page/PoolPhone";
 
 export const AppContext = createContext();
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/download" element={<Download />} />
             <Route path="/brand-story" element={<BrandStory />} />
+            <Route path="/pre-order" element={<PreOrder />} />
+            <Route path="/pools-phone" element={<PoolsPhone />} />
           </Routes>
         </Router>
       </div>

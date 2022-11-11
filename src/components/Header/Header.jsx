@@ -9,7 +9,7 @@ import { HeaderWrapper } from "./styled";
 const NavData = [
   {
     name: "POOLS Phone",
-    link: "",
+    link: "/pools-phone",
   },
   {
     name: "Brand Story",
@@ -29,7 +29,7 @@ const NavData = [
   },
   {
     name: "Support",
-    link: "/",
+    link: "/support",
   },
 ];
 
@@ -47,6 +47,10 @@ export default function Header() {
     const value = e.target.value;
     setLanguage(value);
   };
+
+  const showMenu = () => {
+    setIsShowMenu(!isShowMenu);
+  }
 
   useEffect(() => {
     if (params.hash !== "") {
@@ -132,13 +136,13 @@ export default function Header() {
                 {/* <div id="google_translate_element" className="languages"></div> */}
             </div>
             <AiOutlineMenu
-              onClick={() => setIsShowMenu((prev) => !prev)}
+              onClick={showMenu}
               style={{ fontSize: "5rem" }}
             />
           </div>
         </nav>
         <nav className="nav-config">
-          <div id="google_translate_element" className=" languages"></div>
+          <div id="google_translate_element" className="languages"></div>
         </nav>
           <button className="content_btn">Get POOLS NFT</button>
       </header>

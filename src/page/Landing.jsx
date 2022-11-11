@@ -5,7 +5,7 @@ import Header from "../components/Header/Header";
 import { Container } from "./styled";
 
 import Footer from "../components/Footer/Footer";
-import PreOrder from "../components/PreOrder/PreOrder";
+import Waitlist from "../components/Waitlist/Waitlist";
 import PoolParty from "../components/Consume/Consume";
 import Marketplace from "../components/Marketplace/Marketplace";
 import Camera from "../components/Camera/Camera";
@@ -71,8 +71,12 @@ export default function Landing() {
       <PhoneMaker />
       <Benefits />
       <Table />
+<<<<<<< HEAD
       <PreOrder />
       <PreOderFAQ />
+=======
+      <Waitlist />
+>>>>>>> 2fbae8e87f523eee2fd1596c2db7b6dca6bba067
       <Footer />
     </Container>
   );
