@@ -7,6 +7,10 @@ export const DownloadWrapper = styled.section`
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
+  .content{
+    height: 100vh;
+  }
+
   .content_card {
     width: 100%;
     display: flex;
@@ -19,8 +23,9 @@ export const DownloadWrapper = styled.section`
 
   .card_item {
     border: 2px solid #a8b7c4;
-    padding: 50px 100px;
     background: transparent;
+    width: 20%;
+    padding: 3% 5%;
   }
 
   .item_img {

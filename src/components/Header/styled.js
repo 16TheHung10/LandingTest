@@ -52,7 +52,6 @@ export const HeaderWrapper = styled.div`
             border: none;
             padding: 2rem;
 
-            &:hover,
             &:hover {
               color: #21d4ff;
             }
@@ -85,12 +84,13 @@ export const HeaderWrapper = styled.div`
       align-items: center;
 
       .languages {
+        width: 150px;
+
         select {
           color: #21d4ff;
           background: transparent;
           border: none;
           font-weight: bold;
-          padding: 5px 25px;
         }
 
         option {
@@ -110,11 +110,15 @@ export const HeaderWrapper = styled.div`
   }
 
   .show_menu {
-    transform: scale(1);
+    visibility: 1;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
   }
 
   .hide_menu {
-    transform: translateY(-200%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
   }
 
   @media screen and (max-width: 912px) {

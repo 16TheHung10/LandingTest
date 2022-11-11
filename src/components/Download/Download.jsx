@@ -8,7 +8,7 @@ function Download() {
       <div className="content">
         <h1 className="content_title">Download</h1>
 
-        <div className="content_card">
+        {/* <div className="content_card">
           <button className="card_item">
             <div className="item_img">
               <img src={download} alt="icon" width="100%" height="100%" />
@@ -32,7 +32,7 @@ function Download() {
 
             <p className="item_text">DOWNLOAD 1</p>
           </button>
-        </div>
+        </div> */}
       </div>
     </DownloadWrapper>
   );

@@ -4,15 +4,9 @@ import Header from "../components/Header/Header";
 
 import { Container } from "./styled";
 
-import Brand from "../components/Brand/Brand";
-import Roadmap from "../components/Roadmap/Roadmap";
-import Partner from "../components/Partner/Partner";
-import Footer from "../components/Footer/Footer";
-import PoolsPhone from "../components/PoolsPhone/PoolsPhone";
-import Contribution from "../components/Contribution/Contribution";
-import Video from "../components/Video/Video";
+import VideoPromo from "../components/VideoPromo/VideoPromo";
 
-export default function BrandStory() {
+export default function PoolPhonePage() {
   const [isChangeHeader, setIsChangeHeader] = useState();
 
   const watchScroll = () => {
@@ -33,13 +27,9 @@ export default function BrandStory() {
   return (
     <Container>
       {isChangeHeader ? <Header /> : <Header />}
-      <Brand />
-      <Contribution/>
-      <Video/>
-      <PoolsPhone/>
-      <Roadmap/>
-      <Partner/>
-      <Footer/>
+      <div className="bg_black">
+        <VideoPromo />
+      </div>
     </Container>
   );
 }
